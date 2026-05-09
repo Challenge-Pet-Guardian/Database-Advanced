@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE66EA85-E570-CC1B-2949-6B78E450922B" name="endereco">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>8D9B1E4E-EE09-D1A1-7516-CDF64C517821</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_endereco" id="E38CCAE7-983D-A8F3-EDD7-CBD47422FFAA">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rua" id="7F9FDC60-CAB1-8BB5-066D-53EB375CF0EA">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>1AC6D09E-6B8F-897B-90F6-444ADE2D3181</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bairro" id="E41BC3E3-E2C9-E393-BB4A-7A578AB11380">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>D24498DD-9B64-9333-D00F-8D961B57A5DC</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade" id="9E123DEB-9780-293E-5AF5-AA472314D3F2">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>B57E5F14-4424-5487-8063-98FE72F74393</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="864D7178-2866-83A6-CD6B-21A7B24B01B9">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>84CA6CA6-8662-23B3-D465-43CE5938799C</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9B16E7D-2F0A-8DC7-8D98-91E1150972EE" name="endereco_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>9BD95561-0F21-74A1-508A-D9CD487BBF03</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E38CCAE7-983D-A8F3-EDD7-CBD47422FFAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

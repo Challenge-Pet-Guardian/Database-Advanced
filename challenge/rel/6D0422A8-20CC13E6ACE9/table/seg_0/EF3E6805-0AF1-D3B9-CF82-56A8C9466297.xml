@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF3E6805-0AF1-D3B9-CF82-56A8C9466297" name="usuario">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>561C45D3-EB36-3BBD-55F3-3E77F3DF7BF1</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="5507CC41-5C24-D8B9-F65B-0F9632D2EEDD">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="34138D19-7F4C-6DE0-4DE5-75D2DCDFB5B5">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>EE5EC0D1-52C6-895C-996C-B344BC22676C</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="6D21970D-C193-B172-C2B4-E947AAC3D395">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>FA5AEBBD-AC1D-D9BE-6DF1-E342F8E57BE1</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="98388904-8362-792A-3E43-C83DDEA8F328">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>13A4D995-7C4E-8F28-F883-812A39D8BD77</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="familia_id_familia" id="DBFC46FC-70D1-7150-8D1B-94D671492A2E">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>41475D73-CDB3-4111-505D-B3EC5BC41BF1</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="125B7714-758F-452E-7840-2966D41B54C0" referredColumn="4CF029B2-6A61-8201-5A66-712872251E98"/>
+</associations>
+</Column>
+<Column name="endereco_id_endereco" id="09E864D7-2126-D47A-2F8C-805B7AF7EFCB">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>F70907B0-C9DB-E24B-6231-A6F554E172A6</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A38A6112-8A6C-4EE9-1A57-379500368800" referredColumn="E38CCAE7-983D-A8F3-EDD7-CBD47422FFAA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F123366-5710-E1C7-26C5-FD57DCDBFE6F" name="usuario_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>07BC289B-E856-9BE0-F91F-11B9DE3EEC6C</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5507CC41-5C24-D8B9-F65B-0F9632D2EEDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="753F5A01-D995-6334-1B44-47FD28F8767F" name="usuario__IDX">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BDFC6717-9FF4-80E8-0B44-896CAEBA4309</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="09E864D7-2126-D47A-2F8C-805B7AF7EFCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17434C0A-D4BD-3A51-8947-0CDBC4F35901" name="usuario_endereco_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>BDFC6717-9FF4-80E8-0B44-896CAEBA4309</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09E864D7-2126-D47A-2F8C-805B7AF7EFCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13B75CD2-1688-1B7D-E849-BC2DCA0D881E" name="usuario_familia_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 22:24:38 UTC</createdTime>
+<generatorID>7A63D814-7F5E-4661-EAD9-2B4BB96010CE</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBFC46FC-70D1-7150-8D1B-94D671492A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

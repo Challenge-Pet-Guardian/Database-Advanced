@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D9B1E4E-EE09-D1A1-7516-CDF64C517821" name="endereco">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:45:15 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_endereco" id="8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:53:11 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rua" id="1AC6D09E-6B8F-897B-90F6-444ADE2D3181">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:53:38 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bairro" id="D24498DD-9B64-9333-D00F-8D961B57A5DC">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:54:11 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cidade" id="B57E5F14-4424-5487-8063-98FE72F74393">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:54:24 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="84CA6CA6-8662-23B3-D465-43CE5938799C">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:54:49 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9BD95561-0F21-74A1-508A-D9CD487BBF03" name="endereco PK">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:53:35 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="28714D13-C6DD-1935-5E67-DA090C1F2069" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

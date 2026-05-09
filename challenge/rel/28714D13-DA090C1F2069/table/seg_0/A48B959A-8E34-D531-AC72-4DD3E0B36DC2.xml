@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A48B959A-8E34-D531-AC72-4DD3E0B36DC2" name="veterinaria">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<generatorID>C9B9C552-853D-9ACE-FE44-0135425D4111</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_veterinaria" id="CB6DF76E-BE30-9666-CFA6-C278707E9B3E">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<generatorID>7663179A-3092-6689-AF5D-B75274119D11</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="endereco_id_endereco" id="D8F93A1B-A1F9-A50E-27A1-B9EE42243B3A">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<generatorID>4B3666AB-3E0B-D85B-961B-9D87AE041925</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B4F3E65-241E-0CD5-60F1-FC1269EB72A5" referredColumn="CC202805-B364-6718-F241-8FED5DEDE04B"/>
+</associations>
+</Column>
+<Column name="nome" id="C3C4DC5C-E6E8-6612-A4A0-5FBED6F32325">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<generatorID>641803F3-30DD-72E5-C8A3-A00DC51CF597</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A186FED-AE64-44DA-6DD0-583BE185F67F" name="veterinaria_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<generatorID>BD0B8918-6728-C7AF-25D9-6AE6A1EB1F81</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB6DF76E-BE30-9666-CFA6-C278707E9B3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E07F0964-CB4F-1259-A4C8-8CD35B950215" name="veterinaria__IDX">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>921B8C5F-D02D-E5FA-50DF-909CCB344805</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D8F93A1B-A1F9-A50E-27A1-B9EE42243B3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60175AEF-3CC3-52E2-5DDF-375A058A6670" name="veterinaria_endereco_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-09 21:55:51 UTC</createdTime>
+<generatorID>921B8C5F-D02D-E5FA-50DF-909CCB344805</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8F93A1B-A1F9-A50E-27A1-B9EE42243B3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
