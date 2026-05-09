@@ -37,7 +37,7 @@ BEGIN
             'TB_LOG_ERROS','TB_RECADO','TB_METRICAS_SAUDE',
             'TB_VACINA','TB_MEDICAMENTO','TB_CONSULTA','TB_CLINICA',
             'TB_DAY_STREAK','TB_TASK_COMPLETION','TB_TASK',
-            'TB_USUARIO_PET','TB_PET','TB_USUARIO'
+            'TB_FAMILIA','TB_PET','TB_USUARIO'
         )
     ) LOOP
         EXECUTE IMMEDIATE 'DROP TABLE ' || t.table_name
@@ -52,39 +52,55 @@ END;
 -- SECAO 2: CRIACAO DAS TABELAS (DDL)
 -- ==============================================================
 
+-- ---- TB_FAMILIA (Familia do Pet) ----
+CREATE TABLE tb_familia (
+    id_familia NUMBER        GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    data_adicao    TIMESTAMP     DEFAULT SYSTIMESTAMP,
+    ativo          NUMBER(1)     DEFAULT 1 NOT NULL,
+    CONSTRAINT ck_up_ativo  CHECK (ativo IN (0,1))
+);
+COMMENT ON TABLE  tb_familia      IS 'Familia do Pet';
+
 -- ---- TB_USUARIO ----
 CREATE TABLE tb_usuario (
     id_usuario   NUMBER         GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    id_familia   NUMBER         NOT NULL,
+    papel        VARCHAR2(20)  DEFAULT 'MEMBRO' NOT NULL,
     nome         VARCHAR2(255)  NOT NULL,
     email        VARCHAR2(255)  NOT NULL,
     senha        VARCHAR2(255)  NOT NULL,
     telefone     VARCHAR2(20),
     data_criacao TIMESTAMP      DEFAULT SYSTIMESTAMP,
     ativo        NUMBER(1)      DEFAULT 1 NOT NULL,
+    CONSTRAINT fk_usuario_familia FOREIGN KEY (id_familia) REFERENCES tb_familia(id_familia) ON DELETE CASCADE,
     CONSTRAINT uq_usuario_email UNIQUE (email),
-    CONSTRAINT ck_usuario_ativo CHECK  (ativo IN (0,1))
+    CONSTRAINT ck_usuario_ativo CHECK  (ativo IN (0,1)),
+    CONSTRAINT ck_up_papel  CHECK (papel IN ('DONO','MEMBRO','VETERINARIO'))
 );
 COMMENT ON TABLE  tb_usuario          IS 'Usuarios da plataforma PetGuardian';
 COMMENT ON COLUMN tb_usuario.ativo    IS '1 = Ativo  |  0 = Inativo (exclusao logica)';
 COMMENT ON COLUMN tb_usuario.senha    IS 'Hash da senha (bcrypt ou similar)';
+COMMENT ON COLUMN tb_familia.papel IS 'DONO=responsavel principal | MEMBRO=cuidador | VETERINARIO=clinica/vet';
 
 -- ---- TB_PET ----
 CREATE TABLE tb_pet (
     id_pet           NUMBER         GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    id_familia       NUMBER         NOT NULL,
     nome             VARCHAR2(255)  NOT NULL,
     especie          VARCHAR2(20)   NOT NULL,
     raca             VARCHAR2(100),
     data_nascimento  DATE,
     peso_kg          NUMBER(5,2),
-    genero           CHAR(1),
+    sexo             CHAR(1),
     porte            VARCHAR2(20),
     castrado         NUMBER(1)      DEFAULT 0 NOT NULL,
     informacoes      VARCHAR2(300),
     foto_url         VARCHAR2(500),
     data_criacao     TIMESTAMP      DEFAULT SYSTIMESTAMP,
     ativo            NUMBER(1)      DEFAULT 1 NOT NULL,
+    CONSTRAINT fk_pet_familia FOREIGN KEY (id_familia) REFERENCES tb_familia(id_familia) ON DELETE CASCADE,
     CONSTRAINT ck_pet_especie  CHECK (especie IN ('CACHORRO','GATO','OUTRO')),
-    CONSTRAINT ck_pet_genero   CHECK (genero  IN ('M','F')),
+    CONSTRAINT ck_pet_sexo   CHECK (sexo  IN ('M','F')),
     CONSTRAINT ck_pet_porte    CHECK (porte   IN ('MINI','PEQUENO','MEDIO','GRANDE','GIGANTE')),
     CONSTRAINT ck_pet_castrado CHECK (castrado IN (0,1)),
     CONSTRAINT ck_pet_ativo    CHECK (ativo    IN (0,1)),
@@ -94,28 +110,12 @@ COMMENT ON TABLE  tb_pet              IS 'Animais de estimacao cadastrados';
 COMMENT ON COLUMN tb_pet.porte        IS 'Porte: MINI(<4kg) PEQUENO(4-10kg) MEDIO(10-25kg) GRANDE(25-45kg) GIGANTE(>45kg)';
 COMMENT ON COLUMN tb_pet.castrado     IS '1 = Castrado  |  0 = Nao castrado';
 
--- ---- TB_USUARIO_PET (Familia do Pet) ----
-CREATE TABLE tb_usuario_pet (
-    id_usuario_pet NUMBER        GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    id_usuario     NUMBER        NOT NULL,
-    id_pet         NUMBER        NOT NULL,
-    papel          VARCHAR2(20)  DEFAULT 'MEMBRO' NOT NULL,
-    data_adicao    TIMESTAMP     DEFAULT SYSTIMESTAMP,
-    ativo          NUMBER(1)     DEFAULT 1 NOT NULL,
-    CONSTRAINT fk_up_usuario FOREIGN KEY (id_usuario) REFERENCES tb_usuario(id_usuario) ON DELETE CASCADE,
-    CONSTRAINT fk_up_pet     FOREIGN KEY (id_pet)     REFERENCES tb_pet(id_pet)         ON DELETE CASCADE,
-    CONSTRAINT uq_usuario_pet   UNIQUE (id_usuario, id_pet),
-    CONSTRAINT ck_up_papel  CHECK (papel IN ('DONO','MEMBRO','VETERINARIO')),
-    CONSTRAINT ck_up_ativo  CHECK (ativo IN (0,1))
-);
-COMMENT ON TABLE  tb_usuario_pet      IS 'Familia do Pet: M:N entre usuario e pet';
-COMMENT ON COLUMN tb_usuario_pet.papel IS 'DONO=responsavel principal | MEMBRO=cuidador | VETERINARIO=clinica/vet';
-
 -- ---- TB_TASK ----
 -- id_usuario_criador: nullable (ON DELETE SET NULL => criador pode ser deletado sem perder a tarefa)
 CREATE TABLE tb_task (
     id_task            NUMBER        GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     id_pet             NUMBER        NOT NULL,
+    id_familia         NUMBER        NOT NULL,
     id_usuario_criador NUMBER,
     titulo             VARCHAR2(255) NOT NULL,
     descricao          VARCHAR2(300),
@@ -125,6 +125,7 @@ CREATE TABLE tb_task (
     recorrencia        VARCHAR2(20)  DEFAULT 'UNICA' NOT NULL,
     ativo              NUMBER(1)     DEFAULT 1 NOT NULL,
     CONSTRAINT fk_task_pet     FOREIGN KEY (id_pet)             REFERENCES tb_pet(id_pet)         ON DELETE CASCADE,
+    CONSTRAINT fk_task_familia FOREIGN KEY (id_familia)         REFERENCES tb_familia(id_familia) ON DELETE CASCADE,
     CONSTRAINT fk_task_usuario FOREIGN KEY (id_usuario_criador) REFERENCES tb_usuario(id_usuario) ON DELETE SET NULL,
     CONSTRAINT ck_task_tipo    CHECK (tipo        IN ('MEDICACAO','ALIMENTACAO','EXERCICIO','LIMPEZA','VETERINARIO','OUTRO')),
     CONSTRAINT ck_task_recorr  CHECK (recorrencia IN ('UNICA','DIARIA','SEMANAL','MENSAL')),
@@ -137,10 +138,12 @@ COMMENT ON TABLE  tb_task IS 'Tarefas de cuidado para os pets (contribuem para d
 CREATE TABLE tb_task_completion (
     id_completion   NUMBER    GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     id_task         NUMBER    NOT NULL,
+    id_familia      NUMBER    NOT NULL,
     id_usuario_resp NUMBER,
     data_conclusao  TIMESTAMP DEFAULT SYSTIMESTAMP,
     observacoes     VARCHAR2(300),
     CONSTRAINT fk_tc_task    FOREIGN KEY (id_task)          REFERENCES tb_task(id_task)       ON DELETE CASCADE,
+    CONSTRAINT fk_tc_familia FOREIGN KEY (id_familia)       REFERENCES tb_familia(id_familia) ON DELETE SET NULL,
     CONSTRAINT fk_tc_usuario FOREIGN KEY (id_usuario_resp)  REFERENCES tb_usuario(id_usuario) ON DELETE SET NULL
 );
 COMMENT ON TABLE  tb_task_completion IS 'Historico de conclusao de tarefas (base do calculo de day streak)';
@@ -149,14 +152,14 @@ COMMENT ON TABLE  tb_task_completion IS 'Historico de conclusao de tarefas (base
 CREATE TABLE tb_day_streak (
     id_streak          NUMBER    GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     id_pet             NUMBER    NOT NULL,
-    id_usuario         NUMBER    NOT NULL,
+    id_familia         NUMBER    NOT NULL,
     dias_consecutivos  NUMBER    DEFAULT 1 NOT NULL,
     data_inicio        DATE      NOT NULL,
     ultima_atualizacao TIMESTAMP DEFAULT SYSTIMESTAMP,
     quebrado           NUMBER(1) DEFAULT 0 NOT NULL,
     data_quebra        DATE,
     CONSTRAINT fk_ds_pet     FOREIGN KEY (id_pet)     REFERENCES tb_pet(id_pet)         ON DELETE CASCADE,
-    CONSTRAINT fk_ds_usuario FOREIGN KEY (id_usuario) REFERENCES tb_usuario(id_usuario) ON DELETE CASCADE,
+    CONSTRAINT fk_ds_familia FOREIGN KEY (id_familia) REFERENCES tb_familia(id_familia) ON DELETE CASCADE,
     CONSTRAINT uq_streak     UNIQUE (id_usuario, id_pet),
     CONSTRAINT ck_ds_quebrado CHECK (quebrado          IN (0,1)),
     CONSTRAINT ck_ds_dias     CHECK (dias_consecutivos >= 0)
@@ -255,6 +258,28 @@ CREATE TABLE tb_metricas_saude (
 COMMENT ON TABLE  tb_metricas_saude           IS 'Painel de Saude: metricas periodicas do pet';
 COMMENT ON COLUMN tb_metricas_saude.temperatura_c IS 'Temperatura corporal em Celsius (intervalo fisiologico 30-45 C)';
 
+-- ---- TB_AGENDA_PET (NOVA) ----
+-- Agenda do pet: vacinas, consultas, exames, metricas de saúde, tarefas, etc
+CREATE TABLE tb_agenda_pet (
+    id_agenda       NUMBER    GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    id_pet          NUMBER    NOT NULL,
+    id_familia      NUMBER    NOT NULL,
+    id_consulta     NUMBER,
+    id_vacina       NUMBER,
+    id_metrica      NUMBER,
+    id_task         NUMBER,
+    id_medicamento  NUMBER,
+    notas           VARCHAR2(300),
+    CONSTRAINT fk_ag_pet      FOREIGN KEY (id_pet)      REFERENCES tb_pet(id_pet)           ON DELETE CASCADE,
+    CONSTRAINT fk_ag_familia  FOREIGN KEY (id_familia)  REFERENCES tb_familia(id_familia)   ON DELETE CASCADE,
+    CONSTRAINT fk_ag_consulta FOREIGN KEY (id_consulta) REFERENCES tb_consulta(id_consulta) ON DELETE CASCADE,
+    CONSTRAINT fk_ag_vacina   FOREIGN KEY (id_vacina)   REFERENCES tb_vacina(id_vacina)     ON DELETE CASCADE,
+    CONSTRAINT fk_ag_metrica  FOREIGN KEY (id_metrica)  REFERENCES tb_metricas_saude(id_metrica) ON DELETE CASCADE,
+    CONSTRAINT fk_ag_task     FOREIGN KEY (id_task)     REFERENCES tb_task(id_task)         ON DELETE CASCADE,
+    CONSTRAINT fk_ag_medic    FOREIGN KEY (id_medicamento) REFERENCES tb_medicamento(id_medicamento) ON DELETE CASCADE
+);
+COMMENT ON TABLE  tb_agenda_pet IS 'Agenda do pet: vacinas, consultas, exames, metricas de saude, tarefas, etc';
+
 -- ---- TB_RECADO (NOVA) ----
 -- Tela "Canto da Matilha": recados entre os cuidadores do pet
 CREATE TABLE tb_recado (
@@ -287,8 +312,8 @@ COMMENT ON TABLE  tb_log_erros IS 'Registro centralizado de erros das stored pro
 -- ==============================================================
 CREATE INDEX idx_usuario_email   ON tb_usuario         (email);
 CREATE INDEX idx_pet_ativo       ON tb_pet             (ativo);
-CREATE INDEX idx_up_usuario      ON tb_usuario_pet     (id_usuario);
-CREATE INDEX idx_up_pet          ON tb_usuario_pet     (id_pet);
+CREATE INDEX idx_up_usuario      ON tb_familia     (id_usuario);
+CREATE INDEX idx_up_pet          ON tb_familia     (id_pet);
 CREATE INDEX idx_task_pet        ON tb_task            (id_pet);
 CREATE INDEX idx_task_vencimento ON tb_task            (data_vencimento);
 CREATE INDEX idx_task_tipo       ON tb_task            (tipo);
@@ -332,7 +357,7 @@ SELECT
     COUNT(DISTINCT up.id_usuario)                                     AS nr_cuidadores,
     LISTAGG(u.nome, ', ') WITHIN GROUP (ORDER BY u.nome)             AS cuidadores
 FROM tb_pet          p
-LEFT JOIN tb_usuario_pet up ON p.id_pet     = up.id_pet   AND up.ativo = 1
+LEFT JOIN tb_familia up ON p.id_pet     = up.id_pet   AND up.ativo = 1
 LEFT JOIN tb_usuario      u ON up.id_usuario = u.id_usuario
 WHERE p.ativo = 1
 GROUP BY p.id_pet, p.nome, p.especie, p.porte, p.castrado;
@@ -447,7 +472,7 @@ CREATE OR REPLACE PROCEDURE sp_inserir_pet (
     p_raca            IN tb_pet.raca%TYPE            DEFAULT NULL,
     p_data_nascimento IN tb_pet.data_nascimento%TYPE DEFAULT NULL,
     p_peso_kg         IN tb_pet.peso_kg%TYPE         DEFAULT NULL,
-    p_genero          IN tb_pet.genero%TYPE          DEFAULT NULL,
+    p_sexo          IN tb_pet.sexo%TYPE          DEFAULT NULL,
     p_porte           IN tb_pet.porte%TYPE           DEFAULT NULL,
     p_castrado        IN tb_pet.castrado%TYPE        DEFAULT 0,
     p_informacoes     IN tb_pet.informacoes%TYPE     DEFAULT NULL,
@@ -457,19 +482,19 @@ CREATE OR REPLACE PROCEDURE sp_inserir_pet (
     PRAGMA EXCEPTION_INIT(e_check_violated, -2290);
 BEGIN
     INSERT INTO tb_pet (nome, especie, raca, data_nascimento, peso_kg,
-                        genero, porte, castrado, informacoes, foto_url)
+                        sexo, porte, castrado, informacoes, foto_url)
     VALUES (p_nome, p_especie, p_raca, p_data_nascimento, p_peso_kg,
-            p_genero, p_porte, p_castrado, p_informacoes, p_foto_url);
+            p_sexo, p_porte, p_castrado, p_informacoes, p_foto_url);
     COMMIT;
 
 EXCEPTION
     WHEN e_check_violated THEN
         INSERT INTO tb_log_erros (nome_procedure, codigo_erro, mensagem_erro)
         VALUES ('sp_inserir_pet', -2290,
-                'Valor invalido para especie/genero/porte/castrado. Pet: ' || p_nome);
+                'Valor invalido para especie/sexo/porte/castrado. Pet: ' || p_nome);
         COMMIT;
         RAISE_APPLICATION_ERROR(-20003,
-            'Valor fora do dominio permitido (especie, genero, porte). Pet: ' || p_nome);
+            'Valor fora do dominio permitido (especie, sexo, porte). Pet: ' || p_nome);
 
     WHEN VALUE_ERROR THEN
         INSERT INTO tb_log_erros (nome_procedure, codigo_erro, mensagem_erro)
@@ -487,16 +512,16 @@ END sp_inserir_pet;
 
 -- ---- PROCEDURE: Inserir Usuario_Pet (vincular cuidador ao pet) ----
 CREATE OR REPLACE PROCEDURE sp_inserir_usuario_pet (
-    p_id_usuario IN tb_usuario_pet.id_usuario%TYPE,
-    p_id_pet     IN tb_usuario_pet.id_pet%TYPE,
-    p_papel      IN tb_usuario_pet.papel%TYPE DEFAULT 'MEMBRO'
+    p_id_usuario IN tb_familia.id_usuario%TYPE,
+    p_id_pet     IN tb_familia.id_pet%TYPE,
+    p_papel      IN tb_familia.papel%TYPE DEFAULT 'MEMBRO'
 ) AS
     e_fk_violated    EXCEPTION;
     e_check_violated EXCEPTION;
     PRAGMA EXCEPTION_INIT(e_fk_violated,    -2291);
     PRAGMA EXCEPTION_INIT(e_check_violated, -2290);
 BEGIN
-    INSERT INTO tb_usuario_pet (id_usuario, id_pet, papel)
+    INSERT INTO tb_familia (id_usuario, id_pet, papel)
     VALUES (p_id_usuario, p_id_pet, p_papel);
     COMMIT;
 
@@ -1149,7 +1174,7 @@ BEGIN
         FROM   tb_day_streak   ds
         JOIN   tb_usuario      u  ON ds.id_usuario = u.id_usuario
         JOIN   tb_pet          p  ON ds.id_pet     = p.id_pet
-        JOIN   tb_usuario_pet  up ON up.id_usuario = u.id_usuario AND up.id_pet = p.id_pet
+        JOIN   tb_familia  up ON up.id_usuario = u.id_usuario AND up.id_pet = p.id_pet
         WHERE  ds.quebrado = 0
         ORDER BY ds.dias_consecutivos DESC
     ) LOOP
@@ -1351,7 +1376,7 @@ DECLARE
             p.porte,
             up.papel,
             ds.dias_consecutivos
-        FROM   tb_usuario_pet  up
+        FROM   tb_familia  up
         JOIN   tb_usuario      u  ON up.id_usuario = u.id_usuario
         JOIN   tb_pet          p  ON up.id_pet     = p.id_pet
         LEFT   JOIN tb_day_streak ds ON ds.id_usuario = u.id_usuario AND ds.id_pet = p.id_pet
