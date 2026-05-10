@@ -68,6 +68,18 @@
 <ownDataTypeParameters>11,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="cuidando_pet" id="A8DE25CB-A8C6-7BE6-C6C4-FE6B6DC0EE26">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-10 14:44:48 UTC</createdTime>
+<generatorID>EB36E7C6-D8D0-DA9B-A23C-F41BAB7C2349</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="familia_id_familia" id="ACB6C555-5810-5D23-1BEC-9E9FAFB2F08F">
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-10 02:32:58 UTC</createdTime>

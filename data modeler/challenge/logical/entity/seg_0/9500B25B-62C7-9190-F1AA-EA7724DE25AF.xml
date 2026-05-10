@@ -4,7 +4,7 @@
 <createdTime>2026-05-05 20:53:14 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-05 20:53:18 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-05-10 02:01:52 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-05-05 20:53:28 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <createdTime>2026-05-05 20:53:44 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,19 +72,20 @@
 <createdTime>2026-05-05 20:54:36 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT023</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="idade" id="A98ADC20-7EC2-11ED-C34A-6A39DB94AD99">
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:55:48 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -97,7 +98,7 @@
 <createdTime>2026-05-10 02:03:30 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -111,14 +112,14 @@
 <generatorID>E7113921-96DC-0982-7468-C27D63F7DF29</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <referedAttribute>178873D2-C784-C71B-C0E1-13F6A2881E0A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -127,7 +128,7 @@
 <createdTime>2026-05-05 20:53:26 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</newElementsIDs>
