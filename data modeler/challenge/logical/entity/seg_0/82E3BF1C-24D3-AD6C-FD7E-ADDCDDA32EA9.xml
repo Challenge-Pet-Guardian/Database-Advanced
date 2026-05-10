@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82E3BF1C-24D3-AD6C-FD7E-ADDCDDA32EA9" name="tarefa">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:57:29 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tarefa" id="699EC991-788B-C0D7-49D0-4F17ECAAEA78">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:57:44 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulo" id="709D85EA-E180-E49A-C115-065713575C05">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-10 01:59:55 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="E1356B88-A099-3B08-5CC8-731288B7D342">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-10 02:00:50 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="criacao" id="B199A809-2737-DAE4-0174-269D6DDDFD0A">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:57:55 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prazo" id="B72F7C93-670A-97A9-24F7-0241E19C9142">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:58:25 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="F96F6AE3-04D4-09CF-330C-FA7022C960BB">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:59:00 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="D1030C26-CE41-877F-CC6A-A6F49FD0996F">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 19:05:55 UTC</createdTime>
+<generatorID>2F565217-F0FC-D83F-9224-2C142FD01BEB</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<referedAttribute>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pet" id="B2DF48EC-0D7F-D0BC-8704-B417776DE439">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 19:06:19 UTC</createdTime>
+<generatorID>1F08A43C-7AB5-BA40-A649-D02BC1CD81E4</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<referedAttribute>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C183EE38-1BC1-50FD-024E-6DE7387F9717" name="tarefa PK">
+<createdBy>lulz_user</createdBy>
+<createdTime>2026-05-09 18:57:54 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>699EC991-788B-C0D7-49D0-4F17ECAAEA78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
