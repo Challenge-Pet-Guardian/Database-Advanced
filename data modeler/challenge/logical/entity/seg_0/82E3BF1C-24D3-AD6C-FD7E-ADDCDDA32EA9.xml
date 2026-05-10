@@ -104,7 +104,7 @@
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_pet" id="B2DF48EC-0D7F-D0BC-8704-B417776DE439">
 <createdBy>lulz_user</createdBy>
@@ -119,7 +119,22 @@
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_familia" id="9AED653B-99EF-B041-42B4-90D08E949376">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-10 21:47:59 UTC</createdTime>
+<generatorID>478EF14F-68CF-BE31-4CF3-784A8991547A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+</engineerTo>
+<referedAttribute>178873D2-C784-C71B-C0E1-13F6A2881E0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

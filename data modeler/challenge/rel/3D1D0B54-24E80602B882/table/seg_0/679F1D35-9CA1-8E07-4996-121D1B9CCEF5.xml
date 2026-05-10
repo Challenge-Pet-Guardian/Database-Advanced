@@ -110,6 +110,22 @@
 <colAssociation fkAssociation="83D41585-608C-7500-B8BA-CA8C90342A41" referredColumn="D20821A1-DB68-F351-DAEE-4E58E43EE310"/>
 </associations>
 </Column>
+<Column name="familia_id_familia" id="3617EDE4-EE2E-D43F-27DA-BB26BDD6C509">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-10 21:52:41 UTC</createdTime>
+<generatorID>9AED653B-99EF-B041-42B4-90D08E949376</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="860B0931-2CE9-4A1E-7B75-219B0E8BDB90" referredColumn="0964FD54-B902-0A10-B11C-98584D15D2C4"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="1E61A3C1-11A3-9A09-4095-D73C895B8B53" name="tarefa_PK">
@@ -144,6 +160,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A95F3529-1180-987B-CD1E-021CC55E51E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="987DC055-AC3F-FD70-B3CC-DA8E8E2A302B" name="tarefa_familia_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-10 21:52:41 UTC</createdTime>
+<generatorID>478EF14F-68CF-BE31-4CF3-784A8991547A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3617EDE4-EE2E-D43F-27DA-BB26BDD6C509"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
