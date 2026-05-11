@@ -100,6 +100,22 @@
 <colAssociation fkAssociation="0441B35D-14FC-3D05-F83D-8CA6020058AB" referredColumn="22FD17D0-0419-172E-0785-6FFD1653C823"/>
 </associations>
 </Column>
+<Column name="familia_id_familia2" id="FEAE1D9A-2626-C76A-EF12-F8F9B06B6D43">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-11 20:11:42 UTC</createdTime>
+<generatorID>6BDC9085-5568-C810-AC4E-B1B163A0EB6C</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE7EFC5C-8D63-8FAE-DDB1-37A9DF33395A" referredColumn="BA9AD154-4087-03AA-91B9-F89AA23C56BF"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="AD2A26DF-AA60-729E-C000-EC3B653FAF45" name="usuario_PK">
@@ -145,6 +161,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9147F9AA-FBD6-15BE-AD36-AF3E5F43294A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="699AD159-9C09-7625-20D0-C93A78C09FE9" name="usuario_familia_FKv2">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-11 20:11:42 UTC</createdTime>
+<generatorID>2362C940-4146-6925-0FD1-2E9683088558</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEAE1D9A-2626-C76A-EF12-F8F9B06B6D43"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

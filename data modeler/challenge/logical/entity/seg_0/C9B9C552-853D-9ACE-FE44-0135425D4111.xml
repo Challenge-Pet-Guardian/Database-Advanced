@@ -4,7 +4,7 @@
 <createdTime>2026-05-09 19:02:11 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+<item key="38ED90F4-8309-BE46-1FB9-7E84ED5D99D7" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-09 19:02:16 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+<item key="38ED90F4-8309-BE46-1FB9-7E84ED5D99D7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +34,7 @@
 <generatorID>921B8C5F-D02D-E5FA-50DF-909CCB344805</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+<item key="38ED90F4-8309-BE46-1FB9-7E84ED5D99D7" value="true"/>
 </engineerTo>
 <referedAttribute>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -48,13 +48,26 @@
 <createdTime>2026-05-10 02:08:01 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+<item key="38ED90F4-8309-BE46-1FB9-7E84ED5D99D7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="C01DB305-2230-F9B1-1F76-DE31CECDF9ED">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-11 20:11:23 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="38ED90F4-8309-BE46-1FB9-7E84ED5D99D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -63,7 +76,7 @@
 <createdTime>2026-05-09 19:02:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+<item key="38ED90F4-8309-BE46-1FB9-7E84ED5D99D7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
