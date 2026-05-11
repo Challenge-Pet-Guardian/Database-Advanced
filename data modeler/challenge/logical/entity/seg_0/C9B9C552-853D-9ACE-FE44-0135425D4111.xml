@@ -4,7 +4,7 @@
 <createdTime>2026-05-09 19:02:11 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,13 +20,13 @@
 <createdTime>2026-05-09 19:02:16 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_endereco" id="4B3666AB-3E0B-D85B-961B-9D87AE041925">
 <createdBy>lulz_user</createdBy>
@@ -34,7 +34,7 @@
 <generatorID>921B8C5F-D02D-E5FA-50DF-909CCB344805</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <referedAttribute>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -48,7 +48,7 @@
 <createdTime>2026-05-10 02:08:01 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,7 +63,7 @@
 <createdTime>2026-05-09 19:02:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

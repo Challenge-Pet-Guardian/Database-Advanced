@@ -1,28 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72F0B2C2-4785-856A-84C3-21DB680CC0A1" name="usuario">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1868311F-6E02-8730-F03C-72FA042E2A3A" name="usuario">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>561C45D3-EB36-3BBD-55F3-3E77F3DF7BF1</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_usuario" id="DB3CA435-3DB0-A8E9-3BD0-DC3730261EC1">
+<Column name="id_usuario" id="10BC867C-33D0-EA2E-F4A4-7F2BCE212FAB">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nome" id="917707FF-78C3-8C5D-0F8E-7BA72B9FD947">
+<Column name="nome" id="3C2CD6F1-D47F-051C-F004-D5A0B894245C">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>EE5EC0D1-52C6-895C-996C-B344BC22676C</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,9 +32,9 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="email" id="097A78AA-3998-E97A-7DA9-6735FC3B559E">
+<Column name="email" id="70C217AD-6C11-846D-0C65-5FD10801CBF1">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>28AC41DB-4AA0-CBD2-73A3-7729A6F12ACE</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,9 +44,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="senha" id="366AD211-560D-C227-F4F4-382CE86C3EB0">
+<Column name="senha" id="73AC752D-C667-77EE-7506-A442FD1AEF40">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>FA5AEBBD-AC1D-D9BE-6DF1-E342F8E57BE1</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,9 +56,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="telefone" id="9E2C0FD4-0DC5-860D-4AF0-27EFD12FF203">
+<Column name="telefone" id="E3C6E648-3EFA-1260-7985-73E3028528D2">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>13A4D995-7C4E-8F28-F883-812A39D8BD77</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,83 +68,83 @@
 <ownDataTypeParameters>11,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="familia_id_familia" id="ACB6C555-5810-5D23-1BEC-9E9FAFB2F08F">
+<Column name="familia_id_familia" id="9147F9AA-FBD6-15BE-AD36-AF3E5F43294A">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>41475D73-CDB3-4111-505D-B3EC5BC41BF1</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>3</dataTypeSize>
+<dataTypeSize>16</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="98429497-DA5B-E7D9-861F-1DD7A8CD2A59" referredColumn="0964FD54-B902-0A10-B11C-98584D15D2C4"/>
+<colAssociation fkAssociation="3B799616-BD64-A331-507C-FD07B7FF8252" referredColumn="BA9AD154-4087-03AA-91B9-F89AA23C56BF"/>
 </associations>
 </Column>
-<Column name="endereco_id_endereco" id="BAA957D1-6B57-1841-0E36-A0BE9F4353B2">
+<Column name="endereco_id_endereco" id="F44691A6-94DC-16F4-0622-56FAB6D4CEAE">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>F70907B0-C9DB-E24B-6231-A6F554E172A6</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
+<dataTypeSize>16</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="31EE18DF-5DD5-5317-1CF9-CCAED6A9FC7A" referredColumn="86BF82FD-BCA0-D0C8-5B68-482062DC6641"/>
+<colAssociation fkAssociation="0441B35D-14FC-3D05-F83D-8CA6020058AB" referredColumn="22FD17D0-0419-172E-0785-6FFD1653C823"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D0AE20DC-8A5A-0EA1-C1E6-089FEB57A6CE" name="usuario_PK">
+<ind_PK_UK id="AD2A26DF-AA60-729E-C000-EC3B653FAF45" name="usuario_PK">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>07BC289B-E856-9BE0-F91F-11B9DE3EEC6C</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DB3CA435-3DB0-A8E9-3BD0-DC3730261EC1"/>
+<colUsage columnID="10BC867C-33D0-EA2E-F4A4-7F2BCE212FAB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5AC4726C-4740-E5DA-6814-C6657060D736" name="usuario__IDX">
+<ind_PK_UK id="519334F4-AF61-A902-5D43-0234CA965C17" name="usuario__IDX">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>BDFC6717-9FF4-80E8-0B44-896CAEBA4309</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="BAA957D1-6B57-1841-0E36-A0BE9F4353B2"/>
+<colUsage columnID="F44691A6-94DC-16F4-0622-56FAB6D4CEAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="29D28143-B1E0-054B-3167-18F383F82037" name="usuario_endereco_FK">
+<ind_PK_UK id="EA06C60B-2F7C-A259-0B08-C3BF8C1C7075" name="usuario_endereco_FK">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>BDFC6717-9FF4-80E8-0B44-896CAEBA4309</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BAA957D1-6B57-1841-0E36-A0BE9F4353B2"/>
+<colUsage columnID="F44691A6-94DC-16F4-0622-56FAB6D4CEAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="516A1C67-51FF-5E8B-C6BA-D99321C53B86" name="usuario_familia_FK">
+<ind_PK_UK id="8BE84719-7C7C-A744-F4C7-9BFC2C94F8AB" name="usuario_familia_FK">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>7A63D814-7F5E-4661-EAD9-2B4BB96010CE</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="ACB6C555-5810-5D23-1BEC-9E9FAFB2F08F"/>
+<colUsage columnID="9147F9AA-FBD6-15BE-AD36-AF3E5F43294A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

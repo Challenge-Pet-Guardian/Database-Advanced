@@ -4,7 +4,7 @@
 <createdTime>2026-05-09 18:45:15 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,20 +20,20 @@
 <createdTime>2026-05-09 18:53:11 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="rua" id="1AC6D09E-6B8F-897B-90F6-444ADE2D3181">
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-09 18:53:38 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-05-09 18:54:11 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <createdTime>2026-05-09 18:54:24 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,7 +72,7 @@
 <createdTime>2026-05-09 18:54:49 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -87,7 +87,7 @@
 <createdTime>2026-05-09 18:53:35 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

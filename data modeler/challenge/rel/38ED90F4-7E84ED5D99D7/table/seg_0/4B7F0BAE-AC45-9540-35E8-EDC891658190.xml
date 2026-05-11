@@ -1,28 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D9F5D07-C506-F81A-1DE3-4CA7E1136607" name="atendimento">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B7F0BAE-AC45-9540-35E8-EDC891658190" name="atendimento">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:57 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>F19EEDB2-C018-98BB-2998-A3616E0305B9</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_atendimento" id="CAC017A1-06EA-7C92-BB5B-6DC90C9CF223">
+<Column name="id_atendimento" id="6F2B7F9A-111C-60E2-E23B-76FB171255BF">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>B4ACB295-CC10-F1ED-E73B-1F5DC72E22A3</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tipo_atendimento" id="A1BBB6EC-053C-0E34-5556-52F385446A82">
+<Column name="tipo_atendimento" id="3C84F81A-D561-6FD6-5E34-607FB6A5CEDA">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>88382CA2-9A8C-8455-963B-A0FA8C438E23</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,9 +32,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="data" id="D7593B50-2AE4-3626-37E5-614A0C6A2774">
+<Column name="data" id="D9AEB17E-BAAB-F3FC-1B95-DE2BCFB3159B">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>091829D5-D30A-0B09-7C3B-01CFEE6C08D6</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="anotacoes" id="C560CD67-6722-1FFA-C857-1DF9276F7889">
+<Column name="anotacoes" id="332594A8-096C-1C2D-FF51-8E46F4E2F940">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>C1FFC1E9-8837-F73E-485B-F9E1D099B0B6</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="status" id="75A7675C-F475-4692-BFC7-C3F8F7C37774">
+<Column name="status" id="D83D0DA8-9030-AC10-D9A4-6BDB97A45C5D">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>9C8BEF49-8EE2-2F84-9B1D-C5AD549A0560</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,9 +67,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="valor" id="82008574-2D86-F106-BC32-EA08F4B06373">
+<Column name="valor" id="D046056F-1899-F9C2-C7A1-8B88D71977ED">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>29DBA378-5CBA-5DA5-931D-315C91DF259F</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -80,72 +80,99 @@
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="veterinaria_id_veterinaria" id="82C5526E-09FA-37B8-F7DF-E3A34375B4B3">
+<Column name="veterinaria_id_veterinaria" id="62DA81EB-F355-A0C7-4606-8C8D2EA6F094">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>38527A93-EAA2-00DE-CAE8-A6AC23F9590E</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A6D68DE7-8134-54AF-8DCE-3D77A40E67EA" referredColumn="87CCCE04-BAFB-6B37-17F4-A394CC6984C0"/>
+<colAssociation fkAssociation="5ED52F69-E201-5A34-A7FE-C9A9BA2BD5CB" referredColumn="98E6E43D-B7A6-BD96-33FB-D42AABFFB094"/>
 </associations>
 </Column>
-<Column name="pet_id_pet" id="5435DC70-FB64-92CC-D0DB-C74F2DC531CC">
+<Column name="pet_id_pet" id="F5594F13-1CEB-5A3D-2E2A-8819ACE36757">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>0CA6DFEE-3DA9-2EFA-3C51-B6DB309BECB6</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="D453C94C-E271-F9D5-5D53-318DAAB22258" referredColumn="D20821A1-DB68-F351-DAEE-4E58E43EE310"/>
+<colAssociation fkAssociation="023708F7-F7F2-1B9C-95B1-A8871CD1D700" referredColumn="EE7E639A-4B21-8797-811C-533D7B63269B"/>
+</associations>
+</Column>
+<Column name="familia_id_familia" id="8F3E4088-9B40-6E51-86FC-600F7E99DA26">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
+<generatorID>46701467-C606-BA03-5CA1-794EE0340A3B</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A406729-FB6F-EC67-56FD-68F517ECC407" referredColumn="BA9AD154-4087-03AA-91B9-F89AA23C56BF"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="729EBBA5-94BF-6805-89B2-D0A7F88526FE" name="atendimento_PK">
+<ind_PK_UK id="8E6AA9AE-0F84-6A80-8777-ABCD368AE968" name="atendimento_PK">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>5216628D-6A27-09D6-F84F-E74A4EAD4EE0</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CAC017A1-06EA-7C92-BB5B-6DC90C9CF223"/>
+<colUsage columnID="6F2B7F9A-111C-60E2-E23B-76FB171255BF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E9E65ABF-9767-625E-C0D7-7B1E1FFFEE3F" name="atendimento_veterinaria_FK">
+<ind_PK_UK id="5A96A2E4-CDC1-52AE-163C-425198029C2A" name="atendimento_familia_FK">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
+<generatorID>216F97AC-FEF5-2860-81C5-C7C7C43321A4</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F3E4088-9B40-6E51-86FC-600F7E99DA26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD04FE00-584A-AA2F-FE6D-C5A86F9D9705" name="atendimento_veterinaria_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>83F29112-781C-0D0B-EB05-30CE86D970C2</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="82C5526E-09FA-37B8-F7DF-E3A34375B4B3"/>
+<colUsage columnID="62DA81EB-F355-A0C7-4606-8C8D2EA6F094"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E5BD1038-47D3-9A7F-94F1-1BD4B935D5BC" name="atendimento_pet_FK">
+<ind_PK_UK id="4F9F04D1-B87C-CB47-F016-95EFB32E82C0" name="atendimento_pet_FK">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:32:58 UTC</createdTime>
+<createdTime>2026-05-11 18:49:06 UTC</createdTime>
 <generatorID>04FDD9CB-7EEB-D2F0-8763-F5004B4C09B4</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5435DC70-FB64-92CC-D0DB-C74F2DC531CC"/>
+<colUsage columnID="F5594F13-1CEB-5A3D-2E2A-8819ACE36757"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tipo_atendimento" id="88382CA2-9A8C-8455-963B-A0FA8C438E23">
 <createdBy>Enzo</createdBy>
@@ -122,6 +122,21 @@
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_familia" id="46701467-C606-BA03-5CA1-794EE0340A3B">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-11 17:11:44 UTC</createdTime>
+<generatorID>216F97AC-FEF5-2860-81C5-C7C7C43321A4</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
+</engineerTo>
+<referedAttribute>178873D2-C784-C71B-C0E1-13F6A2881E0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
