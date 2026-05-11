@@ -80,19 +80,6 @@
 <dataTypeSize>11</dataTypeSize>
 <ownDataTypeParameters>11,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cuidando_pet" id="EB36E7C6-D8D0-DA9B-A23C-F41BAB7C2349">
-<createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 14:10:19 UTC</createdTime>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="3D1D0B54-4BA8-126E-1275-24E80602B882" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_familia" id="41475D73-CDB3-4111-505D-B3EC5BC41BF1">
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 21:19:52 UTC</createdTime>
@@ -106,7 +93,7 @@
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_endereco" id="F70907B0-C9DB-E24B-6231-A6F554E172A6">
 <createdBy>lulz_user</createdBy>
