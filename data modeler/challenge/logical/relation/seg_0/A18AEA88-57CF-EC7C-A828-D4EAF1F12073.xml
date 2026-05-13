@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="921B8C5F-D02D-E5FA-50DF-909CCB344805">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-09 19:04:23 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_21" directorySegmentName="seg_0" id="A18AEA88-57CF-EC7C-A828-D4EAF1F12073">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-13 12:32:14 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="52758BFB-14B0-9A40-73C7-4C7FDF787F3B" value="true"/>
+<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
 </engineerTo>
 <sourcePk>9BD95561-0F21-74A1-508A-D9CD487BBF03</sourcePk>
 <identifying>false</identifying>

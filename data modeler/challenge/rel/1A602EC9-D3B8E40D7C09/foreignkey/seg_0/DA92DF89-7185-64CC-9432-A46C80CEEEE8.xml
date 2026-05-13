@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DA92DF89-7185-64CC-9432-A46C80CEEEE8" containerWithKeyObject="2FBA6CBA-8A4D-53DA-45EB-57C4189028BD" localFKIndex="E7FCA7CC-DFC3-FD79-BCA4-F34DF43F423A" name="atendimento_veterinaria_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-13 17:11:54 UTC</createdTime>
+<generatorID>7102055C-2061-765E-F8D6-05A5CBA4159B</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<referredTableLongName>veterinaria</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BAFB0EC-5AAA-8754-BF81-0C2052F45522</referredTableID>
+<keyObject>D8385E3B-BA82-C0E7-542B-93B83B1B0693</keyObject>
+<referredKeyID>D8385E3B-BA82-C0E7-542B-93B83B1B0693</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_veterinaria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
