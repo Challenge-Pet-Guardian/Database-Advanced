@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55B6AC92-DC92-91AC-85DD-0A79C6FCC275" name="status_tarefa">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>B6D0BC43-09F9-D0F3-864F-F645AC65F393</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_status_taref" id="DCF7E209-CD3A-0901-05C8-2D6EFAE00F42">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>4E948DAF-6768-5B20-F6D4-377C5B8FC0D3</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_taref" id="02A3EED6-1AF2-105D-33E2-AEDCC1677235">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>509A568A-45DE-63CD-1A89-8C3A18CF3F75</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<constraintName>status_enum</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="CANCELADO" description=""/>
+<valueDef value="CONCLUIDO" description=""/>
+<valueDef value="PENDENTE" description=""/>
+</listOfValues>
+<defaultValue>PENDENTE</defaultValue>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19FFDEAC-143B-D8B5-7459-36EB6E215D4F" name="status_tarefa_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>30BA166D-4F74-FAA2-A355-36E51A7A6C5B</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCF7E209-CD3A-0901-05C8-2D6EFAE00F42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

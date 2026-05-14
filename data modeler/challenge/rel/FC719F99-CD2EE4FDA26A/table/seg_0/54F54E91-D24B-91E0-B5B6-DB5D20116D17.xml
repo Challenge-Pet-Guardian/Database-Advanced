@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54F54E91-D24B-91E0-B5B6-DB5D20116D17" name="raca">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>41E46DCE-3F90-3860-5C64-0E4C31DEC6E3</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_raca" id="AF25113A-4017-C8D8-7231-ADEB4F14B117">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>1140B66B-585F-B6B9-1F84-B64902BF5EA4</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_raca" id="BA9F16D3-D5DA-2910-9A64-0BA9FA03F34F">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>8378BF7B-D1B8-A6DD-1202-AAA316D66B8E</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28AE3C8D-100C-19F9-DC1B-E3E14F6EDBAF" name="raca_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:51:59 UTC</createdTime>
+<generatorID>B4A25EA9-61B8-A6F7-3F87-09058FF77FA7</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF25113A-4017-C8D8-7231-ADEB4F14B117"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

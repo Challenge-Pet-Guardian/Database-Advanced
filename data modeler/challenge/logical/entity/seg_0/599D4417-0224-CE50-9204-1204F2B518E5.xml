@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="599D4417-0224-CE50-9204-1204F2B518E5" name="usuario_pet">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:57:53 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_usuario" id="654A92F6-DC30-E32D-7BAB-8E52A6A9A86D">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:58:47 UTC</createdTime>
+<generatorID>56E21A7B-51EC-AD9A-92EB-D1AB3C4F2094</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<referedAttribute>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pet" id="CCBE7325-3FFD-E1D2-8A77-EEABB3E65B3E">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:58:53 UTC</createdTime>
+<generatorID>52538248-6169-63F5-3D64-40D3901029FB</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<referedAttribute>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="respon_princ" id="F59BD5F0-CDA2-AC58-DCED-7E78CFCA093A">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:59:23 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87235848-9DA1-E8EF-1154-0FC3CA08CFFA" name="usuario_pet PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:58:47 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>654A92F6-DC30-E32D-7BAB-8E52A6A9A86D</attributeRef>
+<attributeRef>CCBE7325-3FFD-E1D2-8A77-EEABB3E65B3E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

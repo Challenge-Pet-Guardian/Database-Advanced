@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9CF30918-F771-5C8D-6E15-B3A697C7C2AE" name="status_atend">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:39:52 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_status_atend" id="E846BD6E-1F69-2B96-1A46-70919395B850">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:40:35 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_atend" id="748DDC64-61F4-DD4A-1A90-4C1B0B61EBA7">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:41:00 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="CANCELADO" description=""/>
+<valueDef value="CONCLUIDO" description=""/>
+<valueDef value="PENDENTE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC32AEE6-1AD7-5356-83A2-84D3ACA5120F" name="status_atend PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:40:52 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E846BD6E-1F69-2B96-1A46-70919395B850</newElementsIDs>
+<usedAttributes>
+<attributeRef>E846BD6E-1F69-2B96-1A46-70919395B850</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

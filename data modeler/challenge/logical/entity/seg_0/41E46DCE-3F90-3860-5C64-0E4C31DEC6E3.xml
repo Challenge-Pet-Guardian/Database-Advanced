@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="41E46DCE-3F90-3860-5C64-0E4C31DEC6E3" name="raca">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:04:15 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_raca" id="1140B66B-585F-B6B9-1F84-B64902BF5EA4">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:04:19 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_raca" id="8378BF7B-D1B8-A6DD-1202-AAA316D66B8E">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:04:34 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4A25EA9-61B8-A6F7-3F87-09058FF77FA7" name="raca PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:04:42 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1140B66B-585F-B6B9-1F84-B64902BF5EA4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

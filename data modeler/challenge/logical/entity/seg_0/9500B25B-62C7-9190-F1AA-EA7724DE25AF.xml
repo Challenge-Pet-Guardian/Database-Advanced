@@ -4,7 +4,7 @@
 <createdTime>2026-05-05 20:53:14 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-05 20:53:18 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-05-10 02:01:52 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,51 +41,12 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="raca" id="AA862A01-9D4D-51D2-30F8-ED982D9508E1">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-05 20:53:28 UTC</createdTime>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="porte" id="BC900188-A96E-B2BF-16D3-4DCF787C30D2">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-05 20:53:44 UTC</createdTime>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="sexo" id="CB82B922-C106-4A9D-7A5F-2CC54669E6DE">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-05 20:54:36 UTC</createdTime>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="idade" id="A98ADC20-7EC2-11ED-C34A-6A39DB94AD99">
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:55:48 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -93,12 +54,47 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="sexo" id="7E2F5D62-1382-6A43-F8B4-FDBBF4A76A98">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:31:56 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description=""/>
+<valueDef value="M" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="porte" id="04846015-2C23-97B3-B215-51DA96DE79C0">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 14:32:18 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="GRANDE" description=""/>
+<valueDef value="MEDIO" description=""/>
+<valueDef value="PEQUENO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="castrado" id="06F684F4-1E24-D581-4D42-711222E62BB1">
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-10 02:03:30 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -106,15 +102,15 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_familia" id="F6CC9E07-F7DE-CCCC-C4A5-932A98BB0EA9">
+<Attribute name="id_raca" id="B8C0F894-EE3D-82EA-30FC-9DEC9D4A7EA4">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-13 14:11:51 UTC</createdTime>
-<generatorID>17677C02-07C8-F103-E63E-094CEA1B5FFF</generatorID>
+<createdTime>2026-05-14 14:07:17 UTC</createdTime>
+<generatorID>AA376E6E-F851-105C-6F8E-B132E8D1599F</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
-<referedAttribute>178873D2-C784-C71B-C0E1-13F6A2881E0A</referedAttribute>
+<referedAttribute>1140B66B-585F-B6B9-1F84-B64902BF5EA4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
@@ -128,7 +124,7 @@
 <createdTime>2026-05-05 20:53:26 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="1A602EC9-52DC-9D23-976F-D3B8E40D7C09" value="true"/>
+<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</newElementsIDs>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E4FBAB8-A4BB-B883-310A-0C36826BE604" name="Cidade">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:47:36 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cidade" id="32124F2C-2037-3537-492B-C6AF2039FC2C">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:47:46 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_cidade" id="AD49B2AA-83B9-952A-2799-FFCA82EF994B">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:48:11 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado" id="38B19649-3BC8-8D21-99F9-2CDD6A599AC9">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:49:42 UTC</createdTime>
+<generatorID>2EA7BD1E-8790-1EE7-7DA4-31DBC0F58A02</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<referedAttribute>43FAEA87-D76F-A019-06FB-16D9182A4B69</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7431A7EF-12B3-6968-4E66-937B4D4A6028" name="Cidade PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 13:48:09 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32124F2C-2037-3537-492B-C6AF2039FC2C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
