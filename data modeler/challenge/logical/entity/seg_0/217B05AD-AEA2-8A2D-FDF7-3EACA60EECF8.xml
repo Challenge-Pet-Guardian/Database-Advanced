@@ -3,6 +3,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 13:20:50 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,16 +19,22 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 13:21:29 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tipo" id="33E5CD57-4918-04A6-4323-9ABECBD83B0F">
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 13:38:52 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -38,6 +47,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 13:21:35 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <pk>true</pk>
 <newElementsIDs>D0FF78D5-F0E8-8FB3-65B3-A22E372D6E98</newElementsIDs>
 <usedAttributes>

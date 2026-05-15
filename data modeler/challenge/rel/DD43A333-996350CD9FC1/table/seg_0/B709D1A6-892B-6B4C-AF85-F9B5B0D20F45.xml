@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B709D1A6-892B-6B4C-AF85-F9B5B0D20F45" name="endereco">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>8D9B1E4E-EE09-D1A1-7516-CDF64C517821</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_endereco" id="7800D3CD-D960-E683-72A5-5F1B7178B40A">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cep" id="7F8D70AC-1E2F-E0D7-2EA0-C804B8B8BC77">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>D5DC55E2-9A3D-2BA7-66CE-821C6DFF2787</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rua" id="C6EFD646-4F95-25C5-0836-B830296C9C14">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>838FAFC0-F887-1A71-D084-F1329415445F</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="7896BA21-558B-8B72-FB5F-1C30FFC8FFD7">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>0610B596-3167-8D56-9C3F-13B04F34965C</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bairro_id_bairro" id="9F853C86-D04F-EE21-4DEB-534232452674">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>4F25CD0E-A5DF-D4DA-2732-B273B869D94C</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4981E047-D94D-E5B7-3695-2A8B62E3379E" referredColumn="483A90A1-E941-F667-F011-3A10F41A57AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A32C43C9-2B9C-2538-1849-CFBA3CE30A4B" name="endereco_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>9BD95561-0F21-74A1-508A-D9CD487BBF03</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7800D3CD-D960-E683-72A5-5F1B7178B40A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A6EAFFF-C4F0-B629-94A9-A43031409193" name="endereco_Bairro_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 01:29:09 UTC</createdTime>
+<generatorID>A0D21684-44EC-08D7-C2D1-C8B7F7560FF3</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F853C86-D04F-EE21-4DEB-534232452674"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

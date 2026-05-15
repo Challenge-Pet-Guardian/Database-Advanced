@@ -3,6 +3,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:04:15 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,16 +19,22 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:04:19 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nome_raca" id="8378BF7B-D1B8-A6DD-1202-AAA316D66B8E">
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:04:34 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -39,6 +48,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:04:42 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1140B66B-585F-B6B9-1F84-B64902BF5EA4</attributeRef>

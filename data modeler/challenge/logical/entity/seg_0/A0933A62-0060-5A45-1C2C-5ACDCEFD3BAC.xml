@@ -4,7 +4,7 @@
 <createdTime>2026-05-14 14:23:54 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,20 +20,20 @@
 <createdTime>2026-05-14 14:24:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="num_ddd" id="156AF0BC-747D-0D55-E21A-6FA1E06C8624">
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:24:32 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-05-14 14:25:57 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,7 +61,7 @@
 <createdTime>2026-05-14 14:24:30 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

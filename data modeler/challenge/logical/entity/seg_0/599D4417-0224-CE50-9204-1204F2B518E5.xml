@@ -4,7 +4,7 @@
 <createdTime>2026-05-14 13:57:53 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,13 +21,13 @@
 <generatorID>56E21A7B-51EC-AD9A-92EB-D1AB3C4F2094</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <referedAttribute>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_pet" id="CCBE7325-3FFD-E1D2-8A77-EEABB3E65B3E">
@@ -36,13 +36,13 @@
 <generatorID>52538248-6169-63F5-3D64-40D3901029FB</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <referedAttribute>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="respon_princ" id="F59BD5F0-CDA2-AC58-DCED-7E78CFCA093A">
@@ -50,7 +50,7 @@
 <createdTime>2026-05-14 13:59:23 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -65,7 +65,7 @@
 <createdTime>2026-05-14 13:58:47 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -4,7 +4,7 @@
 <createdTime>2026-05-05 20:49:34 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,20 +20,20 @@
 <createdTime>2026-05-05 20:50:27 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nome" id="EE5EC0D1-52C6-895C-996C-B344BC22676C">
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:51:03 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-05-10 02:06:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <createdTime>2026-05-05 20:51:17 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -73,28 +73,13 @@
 <generatorID>E9AF386A-75ED-9D5F-EEA1-7023818800A3</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <referedAttribute>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_telefone" id="3C8B1733-0388-9C94-F4CF-88E9ABC68D6B">
-<createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 14:27:30 UTC</createdTime>
-<generatorID>27EB7224-58A2-CD90-A7C4-2969E91E3195</generatorID>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
-</engineerTo>
-<referedAttribute>004AC3E6-9863-9E96-0F2F-5969E31E9D07</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_familia" id="A3E5734A-9B6F-CF47-37AC-2EDE5BAC9BF8">
@@ -103,9 +88,24 @@
 <generatorID>F0A502A0-BC1B-99A7-D5DF-DB08225B1505</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <referedAttribute>E28B6D4E-18BE-7B7E-3D27-302A456A31C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_telefone" id="CFCCA036-3368-057D-13E4-A5E4F284F441">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-14 16:51:25 UTC</createdTime>
+<generatorID>27EB7224-58A2-CD90-A7C4-2969E91E3195</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+</engineerTo>
+<referedAttribute>004AC3E6-9863-9E96-0F2F-5969E31E9D07</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -119,7 +119,7 @@
 <createdTime>2026-05-05 20:50:54 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="9A056383-874E-2E21-5AF6-06F161ADD364" value="true"/>
+<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>06CB55AC-72C0-906B-C777-AA2E0DCAA90F,E9AF386A-75ED-9D5F-EEA1-7023818800A3,F0A502A0-BC1B-99A7-D5DF-DB08225B1505</newElementsIDs>
