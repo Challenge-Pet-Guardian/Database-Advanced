@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BA09E920-73C0-30B5-0B0E-EDE9F78BB187" containerWithKeyObject="107C6752-59E3-6D4A-1DC4-A1F8AF11C966" localFKIndex="EAFBCA01-DB3A-6017-DE5D-72997B328249" name="historico_pontos_tarefa_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 13:24:08 UTC</createdTime>
+<generatorID>213DD453-728E-0E0E-4CC3-E4D40F69E32A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<referredTableLongName>tarefa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B31B9DE-C925-D300-F2AD-1290545CBDA6</referredTableID>
+<keyObject>FDE17845-6529-80AD-2A84-7AD487A169B8</keyObject>
+<referredKeyID>FDE17845-6529-80AD-2A84-7AD487A169B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tarefa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
