@@ -4,7 +4,7 @@
 <createdTime>2026-05-09 18:45:15 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="179DB8D9-E994-2885-20A3-8CF7F7D59A7E" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-09 18:53:11 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="179DB8D9-E994-2885-20A3-8CF7F7D59A7E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-05-14 13:51:19 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="179DB8D9-E994-2885-20A3-8CF7F7D59A7E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,25 +46,12 @@
 <createdTime>2026-05-14 13:54:45 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="179DB8D9-E994-2885-20A3-8CF7F7D59A7E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="numero" id="0610B596-3167-8D56-9C3F-13B04F34965C">
-<createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 13:55:03 UTC</createdTime>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_bairro" id="4F25CD0E-A5DF-D4DA-2732-B273B869D94C">
 <createdBy>Enzo</createdBy>
@@ -72,15 +59,14 @@
 <generatorID>A0D21684-44EC-08D7-C2D1-C8B7F7560FF3</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="179DB8D9-E994-2885-20A3-8CF7F7D59A7E" value="true"/>
 </engineerTo>
 <referedAttribute>CCBCBA17-75A6-FB8F-3E4B-7F96EDD71374</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -89,7 +75,7 @@
 <createdTime>2026-05-09 18:53:35 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="179DB8D9-E994-2885-20A3-8CF7F7D59A7E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

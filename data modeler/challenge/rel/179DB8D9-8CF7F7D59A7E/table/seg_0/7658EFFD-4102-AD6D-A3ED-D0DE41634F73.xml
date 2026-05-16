@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7658EFFD-4102-AD6D-A3ED-D0DE41634F73" name="historico_pontos">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>D7A913C2-FAE6-BBBD-EC11-432084F55168</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_historico" id="EBCC6608-BEE5-7F08-DD34-A8F44F094F6D">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>39C7A4DA-7C95-BABC-3DA5-CBCEA3D8F392</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pontos_ganhos" id="2865E76D-FB28-5A1B-86D1-08DC16F4DFE9">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>89044E62-9536-56CE-6917-4DFCCDFEC1B5</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_conclusao" id="62E43D91-EA9D-F842-1839-39CCFDC24632">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>16A7C05D-D83F-36BF-72E0-BCA48DC51C86</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tarefa_id_tarefa" id="3941092E-FE2D-25F5-E534-0001B77315BD">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>2E5FE187-CC75-E348-1AF6-0E8E4F90AB36</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29BA2F6E-ED6A-C106-B66C-C10379765251" referredColumn="900D628C-4E82-E79A-CE3A-64397E158188"/>
+</associations>
+</Column>
+<Column name="usuario_id_usuario" id="CEF54214-0777-F31A-B8A2-80B4B12E8499">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>2BC2941F-B518-BF3F-F98E-46F1DA299DF6</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19D0BFE7-5EB1-07B0-3164-BB3EAFFB80B5" referredColumn="2E63CB80-26F7-5EBC-2A95-A3E8C0F16185"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D666B60-9731-0B8A-8536-49AFAC946DF6" name="historico_pontos_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>B7E3959A-941C-4A9A-0A9B-CD70D4C59574</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBCC6608-BEE5-7F08-DD34-A8F44F094F6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D89FF0DA-84A9-2C1A-65A9-6460FB4D179A" name="historico_pontos_tarefa_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>213DD453-728E-0E0E-4CC3-E4D40F69E32A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3941092E-FE2D-25F5-E534-0001B77315BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1707B662-DF41-EE21-B111-E8702B012CB1" name="historico_pontos_usuario_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-16 00:41:01 UTC</createdTime>
+<generatorID>178C3586-C01B-2255-05B9-4F30FF68E95D</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEF54214-0777-F31A-B8A2-80B4B12E8499"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

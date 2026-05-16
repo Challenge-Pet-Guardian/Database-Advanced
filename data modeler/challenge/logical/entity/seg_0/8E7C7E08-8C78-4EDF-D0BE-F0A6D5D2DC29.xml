@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E7C7E08-8C78-4EDF-D0BE-F0A6D5D2DC29" name="sequencia">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 18:58:47 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sequencia" id="BADA7C54-EF9A-876F-2297-4CD3EA1C8A9C">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 18:58:57 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sequencia_atual" id="E542C417-D0B4-2606-B417-D68AD85CB85B">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 18:59:09 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sequencia_maxima" id="BAA0A8B6-97C1-7F66-235B-65C060972AE4">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 19:09:17 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_ultima_acao" id="B80F7CA8-04E0-345A-4D44-05B5EEE6DCAA">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 19:09:37 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_familia" id="CBB0227C-7D40-1105-4B2A-E3EC593C3E57">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 22:24:22 UTC</createdTime>
+<generatorID>B185AB84-EBC9-27D7-ECF7-13E8FFEEFC3B</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<referedAttribute>E28B6D4E-18BE-7B7E-3D27-302A456A31C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8B0AF3EE-B16D-CC6C-1253-DC38FE4B530F" name="sequencia PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-15 18:59:05 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="B019F46D-EEB0-6AAD-1184-11EF545D4C12" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BADA7C54-EF9A-876F-2297-4CD3EA1C8A9C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
