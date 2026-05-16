@@ -52,22 +52,6 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="usuario_id_familia" id="3FF01175-D76A-E9F2-18E9-F702F75210B3">
-<createdBy>Enzo</createdBy>
-<createdTime>2026-05-16 13:24:08 UTC</createdTime>
-<generatorID>D9F40985-4DAD-D3EB-00F6-9035CDCD975D</generatorID>
-<ownerDesignName>challenge</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B6E57D74-887F-F405-C389-F29C03958AD4" referredColumn="99D596F0-088E-047B-A8F8-4C7CC5565528"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5540F175-9A5F-D7B8-9D2A-C7EA3BC4A030" name="usuario_pet_PK">
@@ -92,7 +76,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0849F7D1-F18D-B124-0AD0-CDE116EFD5DB"/>
-<colUsage columnID="3FF01175-D76A-E9F2-18E9-F702F75210B3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="3BCE3EF5-874B-84AB-AE10-3172FD3757FB" name="usuario_pet_pet_FK">

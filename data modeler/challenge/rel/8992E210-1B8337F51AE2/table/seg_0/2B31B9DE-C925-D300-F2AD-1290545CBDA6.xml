@@ -126,22 +126,6 @@
 <colAssociation fkAssociation="FF30744B-1E1A-4BD5-0769-806D28DB9ABB" referredColumn="9E208DA2-F06C-4A39-B174-8C3F364B86B8"/>
 </associations>
 </Column>
-<Column name="usuario_id_familia" id="33447EE2-82DC-75A6-2FD8-C34FFFD10725">
-<createdBy>Enzo</createdBy>
-<createdTime>2026-05-16 13:24:08 UTC</createdTime>
-<generatorID>2A4E9176-B9E0-6AD5-8535-E31370652207</generatorID>
-<ownerDesignName>challenge</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="3E1FB696-DEF6-6A87-3400-C82979E13E09" referredColumn="99D596F0-088E-047B-A8F8-4C7CC5565528"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FDE17845-6529-80AD-2A84-7AD487A169B8" name="tarefa_PK">
@@ -187,7 +171,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A20B230C-A3CC-3D59-C61C-97248F08708E"/>
-<colUsage columnID="33447EE2-82DC-75A6-2FD8-C34FFFD10725"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="7ECD3CC5-80F6-D8A5-24A7-D56FDABBE1B1" name="tarefa_status_FK">

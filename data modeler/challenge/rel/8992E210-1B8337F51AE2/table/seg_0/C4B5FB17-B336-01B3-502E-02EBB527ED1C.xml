@@ -116,7 +116,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5B892DA8-F5D9-162B-4C29-F5326C8FBD73"/>
-<colUsage columnID="99D596F0-088E-047B-A8F8-4C7CC5565528"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="5BD48EDF-D4B0-EADC-0236-3A16952F7A91" name="usuario__IDX">
