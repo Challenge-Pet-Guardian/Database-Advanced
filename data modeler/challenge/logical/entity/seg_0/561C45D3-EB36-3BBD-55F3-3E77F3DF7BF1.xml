@@ -67,21 +67,6 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_endereco" id="3EEAAA96-87C6-5557-0B1F-13A34E60FEFE">
-<createdBy>Enzo</createdBy>
-<createdTime>2026-05-13 12:32:07 UTC</createdTime>
-<generatorID>E9AF386A-75ED-9D5F-EEA1-7023818800A3</generatorID>
-<ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
-</engineerTo>
-<referedAttribute>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_familia" id="A3E5734A-9B6F-CF47-37AC-2EDE5BAC9BF8">
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:41:32 UTC</createdTime>
@@ -112,6 +97,21 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_endereco" id="02A1F1FD-9FBE-3250-D963-EBAAA8382D96">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-17 17:38:09 UTC</createdTime>
+<generatorID>C08C63A2-B6E6-3F40-B2EC-A17163C224AD</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+</engineerTo>
+<referedAttribute>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="07BC289B-E856-9BE0-F91F-11B9DE3EEC6C" name="usuario PK">
@@ -122,7 +122,7 @@
 <item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>06CB55AC-72C0-906B-C777-AA2E0DCAA90F,F0A502A0-BC1B-99A7-D5DF-DB08225B1505</newElementsIDs>
+<newElementsIDs>06CB55AC-72C0-906B-C777-AA2E0DCAA90F,F0A502A0-BC1B-99A7-D5DF-DB08225B1505,C08C63A2-B6E6-3F40-B2EC-A17163C224AD</newElementsIDs>
 <usedAttributes>
 <attributeRef>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</attributeRef>
 </usedAttributes>

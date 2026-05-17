@@ -4,7 +4,7 @@
 <createdTime>2026-05-09 19:02:48 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-09 19:02:53 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-05-09 19:03:11 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +45,7 @@
 <createdTime>2026-05-09 19:03:27 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,7 +58,7 @@
 <createdTime>2026-05-10 02:11:29 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -73,15 +73,14 @@
 <generatorID>22F1DC37-8455-BBCA-CC54-CA4ACFD3BF46</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <referedAttribute>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_veterinaria" id="0AA42FD8-5DE6-77DA-80B6-8446CA9737CA">
 <createdBy>Enzo</createdBy>
@@ -89,41 +88,39 @@
 <generatorID>7102055C-2061-765E-F8D6-05A5CBA4159B</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <referedAttribute>7663179A-3092-6689-AF5D-B75274119D11</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_tipo_atend" id="832491C2-2980-E7D5-6CC6-756FE2A3865F">
+<Attribute name="id_status" id="BACB1ACE-4239-BA33-1EA3-33124AC0F3DB">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 13:45:00 UTC</createdTime>
-<generatorID>2CD95C98-04DB-32F0-BE46-CCD0D8E76988</generatorID>
+<createdTime>2026-05-17 19:00:00 UTC</createdTime>
+<generatorID>2EED9171-8068-0041-7A8E-1C9BCFF5C323</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
-<referedAttribute>D0FF78D5-F0E8-8FB3-65B3-A22E372D6E98</referedAttribute>
+<referedAttribute>733F42C1-9D56-CB00-FC7C-1BBFED52BFB5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_status" id="4EC90A5F-906F-F128-5161-9D11289086D9">
+<Attribute name="id_tipo_atend" id="D1D39482-DAB3-5C97-5AF0-71DE298750EB">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 18:05:32 UTC</createdTime>
-<generatorID>5D60F169-89B0-BC24-D56B-EA4467ABABDC</generatorID>
+<createdTime>2026-05-17 19:03:19 UTC</createdTime>
+<generatorID>BCFDE5CA-18EC-E572-40DD-78713264AC6B</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
-<referedAttribute>733F42C1-9D56-CB00-FC7C-1BBFED52BFB5</referedAttribute>
+<referedAttribute>D0FF78D5-F0E8-8FB3-65B3-A22E372D6E98</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -137,7 +134,7 @@
 <createdTime>2026-05-09 19:03:10 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

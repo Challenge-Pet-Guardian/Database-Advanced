@@ -4,7 +4,7 @@
 <createdTime>2026-05-09 18:57:29 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-09 18:57:44 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-05-10 01:59:55 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-05-15 11:31:39 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <createdTime>2026-05-10 02:00:50 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,7 +72,7 @@
 <createdTime>2026-05-09 18:57:55 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,7 +84,7 @@
 <createdTime>2026-05-09 18:58:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -97,14 +97,14 @@
 <generatorID>E6637EA1-411C-D61D-DB79-B4B3A612EA8E</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <referedAttribute>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_usuario" id="694A0A7C-62FE-D26E-FD7D-07DEDCFF1A17">
 <createdBy>Enzo</createdBy>
@@ -112,7 +112,7 @@
 <generatorID>38282D77-CD3E-B5E1-0421-1BCC5305E432</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <referedAttribute>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -121,20 +121,20 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_status" id="A2E752D2-A8C6-18DB-2831-4CBB19BF0776">
+<Attribute name="id_status" id="F04F553E-83ED-7B30-F8DC-0C7F3CC692EA">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 18:05:22 UTC</createdTime>
-<generatorID>1B6F0DEB-1D51-3AC0-E45D-A04F3B92CC25</generatorID>
+<createdTime>2026-05-17 18:56:21 UTC</createdTime>
+<generatorID>5F8F06D1-A046-C21C-C5B5-5BDFCAE5667E</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <referedAttribute>733F42C1-9D56-CB00-FC7C-1BBFED52BFB5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -143,7 +143,7 @@
 <createdTime>2026-05-09 18:57:54 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="8992E210-001F-59CA-A206-1B8337F51AE2" value="true"/>
+<item key="A9D78D72-4CDE-93B5-3BC8-344C99CC68F7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
