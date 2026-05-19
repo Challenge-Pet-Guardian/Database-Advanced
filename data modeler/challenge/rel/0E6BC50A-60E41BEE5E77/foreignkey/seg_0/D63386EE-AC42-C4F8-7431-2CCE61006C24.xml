@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D63386EE-AC42-C4F8-7431-2CCE61006C24" containerWithKeyObject="2D830CF3-1E4D-DAA6-95D7-716ACB36470C" localFKIndex="EC2BA89D-F7E5-A85D-8B86-BB73D83EBA79" name="pet_raca_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-18 00:26:24 UTC</createdTime>
+<generatorID>FC9F0C60-0641-BAA8-33DA-AF8E759775F2</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<referredTableLongName>raca</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99AD3D25-3A3E-CBF2-5784-ADFF32DA9227</referredTableID>
+<keyObject>0283A633-7FD2-E63A-D66F-33CC16005966</keyObject>
+<referredKeyID>0283A633-7FD2-E63A-D66F-33CC16005966</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_raca</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

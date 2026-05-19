@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C433E4F2-FF77-DC7F-E811-D8E5A9988D2E" name="sequencia">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>8E7C7E08-8C78-4EDF-D0BE-F0A6D5D2DC29</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="familia_id_familia" id="ECADB16D-7E36-F849-AFB6-0AECA9435856">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>3E2E878E-090B-F2B7-A381-0A4553A67C69</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9C698E7-FB1D-5E64-BDF1-E953787BA3E1" referredColumn="1F05E083-E92D-7811-4ED2-96FEB9AAC9E3"/>
+</associations>
+</Column>
+<Column name="sequencia_atual" id="F15DF711-ED6C-967A-286C-E13D1D78747C">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>E542C417-D0B4-2606-B417-D68AD85CB85B</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sequencia_maxima" id="2690AE32-E7A7-BF9E-03E9-36E9D1F6F3DF">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>BAA0A8B6-97C1-7F66-235B-65C060972AE4</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_ultima_acao" id="2A3C9F5A-06B4-D484-419D-09EBDE1512FE">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>B80F7CA8-04E0-345A-4D44-05B5EEE6DCAA</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="259DADF2-591B-CB4F-3A7F-13CA07984685" name="sequencia_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>8B0AF3EE-B16D-CC6C-1253-DC38FE4B530F</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECADB16D-7E36-F849-AFB6-0AECA9435856"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B83CA31F-2EB0-69CC-1968-F7F372D96B09" name="sequencia_familia_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>06F60484-FE9A-DBFE-DD13-CEFBF695EEDF</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECADB16D-7E36-F849-AFB6-0AECA9435856"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

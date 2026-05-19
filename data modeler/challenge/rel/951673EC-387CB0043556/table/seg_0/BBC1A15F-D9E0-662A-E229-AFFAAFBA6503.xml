@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBC1A15F-D9E0-662A-E229-AFFAAFBA6503" name="usuario_pet">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>599D4417-0224-CE50-9204-1204F2B518E5</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="usuario_id_usuario" id="CC0FF385-6AA4-E64C-DAF4-8596076910AF">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>654A92F6-DC30-E32D-7BAB-8E52A6A9A86D</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E856CB47-E211-39F2-0FF2-9CA345148F56" referredColumn="AEC3EE70-FEE3-4A82-4B92-D56D31A82D5A"/>
+</associations>
+</Column>
+<Column name="pet_id_pet" id="7D0F30AA-D6DD-7D20-3A52-B3674A9BD2EC">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>CCBE7325-3FFD-E1D2-8A77-EEABB3E65B3E</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF585C73-5175-BC39-AB58-EF2D38144663" referredColumn="3D4C5612-4C8A-8B05-00EC-A973F0748535"/>
+</associations>
+</Column>
+<Column name="respon_princ" id="86F7EC90-95B9-FC1E-DFCD-A9B699AD9F08">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>F59BD5F0-CDA2-AC58-DCED-7E78CFCA093A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDE76965-6504-2F39-F485-02153F970A28" name="usuario_pet_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>87235848-9DA1-E8EF-1154-0FC3CA08CFFA</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC0FF385-6AA4-E64C-DAF4-8596076910AF"/>
+<colUsage columnID="7D0F30AA-D6DD-7D20-3A52-B3674A9BD2EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D10EE4E3-63AD-8C8E-D6CE-851F08F84E34" name="usuario_pet_usuario_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>56E21A7B-51EC-AD9A-92EB-D1AB3C4F2094</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC0FF385-6AA4-E64C-DAF4-8596076910AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45510C89-D15C-A918-1DC0-B9B7D8E9E319" name="usuario_pet_pet_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-19 01:28:10 UTC</createdTime>
+<generatorID>52538248-6169-63F5-3D64-40D3901029FB</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D0F30AA-D6DD-7D20-3A52-B3674A9BD2EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

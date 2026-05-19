@@ -4,7 +4,7 @@
 <createdTime>2026-05-05 20:53:14 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-05 20:53:18 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-05-10 02:01:52 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-05-05 20:55:48 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <createdTime>2026-05-14 14:31:56 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -76,7 +76,7 @@
 <createdTime>2026-05-14 14:32:18 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -94,29 +94,28 @@
 <createdTime>2026-05-10 02:03:30 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_raca" id="B8C0F894-EE3D-82EA-30FC-9DEC9D4A7EA4">
+<Attribute name="id_raca" id="E038BE6F-13FC-06AE-BF27-CB66DFADD06E">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 14:07:17 UTC</createdTime>
-<generatorID>AA376E6E-F851-105C-6F8E-B132E8D1599F</generatorID>
+<createdTime>2026-05-17 23:40:51 UTC</createdTime>
+<generatorID>FC9F0C60-0641-BAA8-33DA-AF8E759775F2</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <referedAttribute>1140B66B-585F-B6B9-1F84-B64902BF5EA4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -125,10 +124,10 @@
 <createdTime>2026-05-05 20:53:26 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="70CE979A-6547-9897-18DA-5073035B9461" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</newElementsIDs>
+<newElementsIDs>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D,FC9F0C60-0641-BAA8-33DA-AF8E759775F2</newElementsIDs>
 <usedAttributes>
 <attributeRef>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</attributeRef>
 </usedAttributes>

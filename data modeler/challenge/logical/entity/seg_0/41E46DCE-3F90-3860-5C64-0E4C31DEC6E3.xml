@@ -4,7 +4,7 @@
 <createdTime>2026-05-14 14:04:15 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="CDA325FA-4BDC-759A-0C5A-A89B490A90CD" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-05-14 14:04:19 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="CDA325FA-4BDC-759A-0C5A-A89B490A90CD" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,9 +33,8 @@
 <createdTime>2026-05-14 14:04:34 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="CDA325FA-4BDC-759A-0C5A-A89B490A90CD" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,7 +48,7 @@
 <createdTime>2026-05-14 14:04:42 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
-<item key="21D9F054-C0A2-D4EC-4FA2-555AC6B1C1F3" value="true"/>
+<item key="CDA325FA-4BDC-759A-0C5A-A89B490A90CD" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
