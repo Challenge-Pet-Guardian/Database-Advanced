@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A332565-1E98-F886-E9F0-80899C604006" containerWithKeyObject="0E34F601-F86A-6138-E2D6-E3D3A8930FAE" localFKIndex="F8408D0C-4014-CEF0-6D56-B9BCDA947A4B" name="atendimento_tipo_atend_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-20 12:54:46 UTC</createdTime>
+<generatorID>BCFDE5CA-18EC-E572-40DD-78713264AC6B</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<referredTableLongName>tipo_atend</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CBEFEB67-72AC-CFE4-88F1-4AD5A583A675</referredTableID>
+<keyObject>CC6680C6-FFC3-F1A1-E6D7-961B35E2BA59</keyObject>
+<referredKeyID>CC6680C6-FFC3-F1A1-E6D7-961B35E2BA59</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_atend</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
