@@ -234,7 +234,7 @@ CREATE TABLE veterinario
      email                VARCHAR2 (50)  NOT NULL , 
      senha                VARCHAR2 (20)  NOT NULL , 
      telefone_id_telefone NUMBER (3)  NOT NULL , 
-     clinica_id_clinica   NUMBER (3)  NOT NULL 
+     clinica_id_clinica   NUMBER (3)
     ) 
 ;
 CREATE UNIQUE INDEX veterinario__IDX ON veterinario 
