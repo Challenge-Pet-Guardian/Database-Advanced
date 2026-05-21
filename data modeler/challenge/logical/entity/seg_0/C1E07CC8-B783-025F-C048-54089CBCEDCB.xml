@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C9B9C552-853D-9ACE-FE44-0135425D4111" name="clinica">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-09 19:02:11 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1E07CC8-B783-025F-C048-54089CBCEDCB" name="veterinario">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-21 14:02:04 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
 <item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_clinica" id="7663179A-3092-6689-AF5D-B75274119D11">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-09 19:02:16 UTC</createdTime>
+<Attribute name="id_veterinario" id="A70E3F6A-625A-4AE8-C0F6-20886E05126E">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-21 14:02:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
 <item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
@@ -28,9 +28,9 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nome" id="09637B2A-CA0D-1493-6084-EB8B9C089B84">
+<Attribute name="nome" id="48EB0113-084E-67FF-BD2C-9C5EDC566F1E">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-10 02:08:01 UTC</createdTime>
+<createdTime>2026-05-21 14:03:01 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
 <item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
@@ -38,13 +38,39 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_telefone" id="4E6DDE53-8020-B273-297E-7CB7D831BFCF">
+<Attribute name="email" id="AEF3566B-A08B-354A-3759-FE4A3CD9F0E8">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-14 16:51:25 UTC</createdTime>
-<generatorID>7F50F6E5-A63F-AF01-B6F9-21EDA8A5F272</generatorID>
+<createdTime>2026-05-21 14:03:29 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="senha" id="A6D48563-C74D-1B36-734F-B710E88EEA29">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-21 14:03:46 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_telefone" id="85B665C8-BFC7-A504-3BC2-D645152FE36F">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-21 14:04:33 UTC</createdTime>
+<generatorID>4E44099A-1710-578D-EEA1-064FAA37BC7A</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
 <item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
@@ -54,17 +80,17 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_endereco" id="D2095501-C7E9-1349-85F3-B8610238B16D">
+<Attribute name="id_clinica" id="CC2D3D0C-9EC3-5F03-D058-C2B80B6D7EEF">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-21 14:13:56 UTC</createdTime>
-<generatorID>DBA8F7E9-AC21-9686-A0D7-FFF1ECD17BC6</generatorID>
+<createdTime>2026-05-21 14:39:41 UTC</createdTime>
+<generatorID>7D450393-F3F4-F5FF-BA76-B60D9FE2121A</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
 <engineerTo>
 <item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
 </engineerTo>
-<referedAttribute>8D0D09AC-9460-ABE1-1E50-9FE7F521CBF8</referedAttribute>
+<referedAttribute>7663179A-3092-6689-AF5D-B75274119D11</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -73,18 +99,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="BD0B8918-6728-C7AF-25D9-6AE6A1EB1F81" name="clinica PK">
-<createdBy>lulz_user</createdBy>
-<createdTime>2026-05-09 19:02:25 UTC</createdTime>
+<identifier id="D074F813-038B-0854-1F78-F673A9351B87" name="veterinario PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-21 14:03:00 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="D1858235-BC12-2586-FA46-B67B19390F53" value="false"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>7663179A-3092-6689-AF5D-B75274119D11</newElementsIDs>
 <usedAttributes>
-<attributeRef>7663179A-3092-6689-AF5D-B75274119D11</attributeRef>
+<attributeRef>A70E3F6A-625A-4AE8-C0F6-20886E05126E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
