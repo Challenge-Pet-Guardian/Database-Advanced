@@ -5,34 +5,30 @@
 
 -- ========== TABLE: USER ==========
 -- Usuários da plataforma
-CREATE TABLE user (
-    id_user INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE usuario (
+    id_usuario NUMBER AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL,
-    telefone VARCHAR(20),
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    ativo BOOLEAN DEFAULT TRUE
+    telefone_id_telefone NUMBER(3),
+    -- data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    -- ativo BOOLEAN DEFAULT TRUE
 );
 
 -- ========== TABLE: PET ==========
 -- Animais de estimação
 CREATE TABLE pet (
-    id_pet INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    especie VARCHAR(100) NOT NULL,  -- Cachorro, Gato
-    raca VARCHAR(100),
-    data_nascimento DATE,
-    peso_kg DECIMAL(5, 2),
-    genero ENUM('M', 'F'),
-    informacoes VARCHAR(300),
-    foto_url VARCHAR(500),
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    ativo BOOLEAN DEFAULT TRUE
+    id_pet NUMBER AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(30) NOT NULL,
+    idade NUMBER(3) NOT NULL,
+    sexo VARCHAR(1),
+    porte VARCHAR2(10),
+    castrado VARCHAR(1),
+    raca_id_raca NUMBER(3)
 );
 
 -- ========== TABLE: USER_PET ==========
--- Relacionamento M:N entre usuários e pets (Família do Pet)
+-- Relacionamento M:N entre usuários e pets
 -- Um usuário pode ter vários pets
 -- Um pet pode ser cuidado por vários usuários
 
@@ -42,12 +38,9 @@ CREATE TABLE pet (
 -- VETERINARIO: clínica/veterinário associado
 
 CREATE TABLE user_pet (
-    id_user_pet INT AUTO_INCREMENT PRIMARY KEY,
-    id_user INT NOT NULL,
-    id_pet INT NOT NULL,
-    papel ENUM('DONO', 'MEMBROS', 'VETERINARIO') DEFAULT 'MEMBROS',
-    data_adicao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    ativo BOOLEAN DEFAULT TRUE,
+    id_user NUMBER NOT NULL PRIMARY KEY,
+    id_pet NUMBER NOT NULL PRIMARY KEY,
+    respon_principal CHAR(1) NOT NULL,
     FOREIGN KEY (id_user) REFERENCES user(id_user) ON DELETE CASCADE,
     FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE,
     UNIQUE KEY unique_user_pet (id_user, id_pet)
