@@ -1,248 +1,466 @@
--- ==========================================
--- CHALLENGE CLYVO - PET CARE DATABASE
--- Database Schema for Pet Care & Family Management
--- ==========================================
+CREATE TABLE atendimento 
+    ( 
+     id_atendimento             NUMBER (3)  NOT NULL , 
+     data                       TIMESTAMP  NOT NULL , 
+     anotacoes                  VARCHAR2 (300)  NOT NULL , 
+     valor                      NUMBER (10,2)  NOT NULL , 
+     pet_id_pet                 NUMBER (3)  NOT NULL , 
+     status_id_status           NUMBER (3)  NOT NULL , 
+     tipo_atend_id_tipo_atend   NUMBER (3)  NOT NULL , 
+     veterinario_id_veterinario NUMBER (3)  NOT NULL 
+    ) 
+;
 
--- ========== TABLE: USER ==========
--- Usuários da plataforma
-CREATE TABLE usuario (
-    id_usuario NUMBER AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    senha VARCHAR(255) NOT NULL,
-    telefone_id_telefone NUMBER(3),
-    -- data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    -- ativo BOOLEAN DEFAULT TRUE
-);
+ALTER TABLE atendimento 
+    ADD CONSTRAINT atendimento_PK PRIMARY KEY ( id_atendimento ) ;
 
--- ========== TABLE: PET ==========
--- Animais de estimação
-CREATE TABLE pet (
-    id_pet NUMBER AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(30) NOT NULL,
-    idade NUMBER(3) NOT NULL,
-    sexo VARCHAR(1),
-    porte VARCHAR2(10),
-    castrado VARCHAR(1),
-    raca_id_raca NUMBER(3)
-);
+CREATE TABLE bairro 
+    ( 
+     id_bairro        NUMBER (3)  NOT NULL , 
+     nome_bairro      VARCHAR2 (30)  NOT NULL , 
+     cidade_id_cidade NUMBER (3)  NOT NULL 
+    ) 
+;
 
--- ========== TABLE: USER_PET ==========
--- Relacionamento M:N entre usuários e pets
--- Um usuário pode ter vários pets
--- Um pet pode ser cuidado por vários usuários
+ALTER TABLE bairro 
+    ADD CONSTRAINT bairro_PK PRIMARY KEY ( id_bairro ) ;
 
--- Papel do usuário em relação ao pet:
--- DONO: responsável principal
--- MEMBROS: membro da família que cuida
--- VETERINARIO: clínica/veterinário associado
+CREATE TABLE cidade 
+    ( 
+     id_cidade        NUMBER (3)  NOT NULL , 
+     nome_cidade      VARCHAR2 (30)  NOT NULL , 
+     estado_id_estado NUMBER (3)  NOT NULL 
+    ) 
+;
 
-CREATE TABLE user_pet (
-    id_user NUMBER NOT NULL PRIMARY KEY,
-    id_pet NUMBER NOT NULL PRIMARY KEY,
-    respon_principal CHAR(1) NOT NULL,
-    FOREIGN KEY (id_user) REFERENCES user(id_user) ON DELETE CASCADE,
-    FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE,
-    UNIQUE KEY unique_user_pet (id_user, id_pet)
-);
+ALTER TABLE cidade 
+    ADD CONSTRAINT cidade_PK PRIMARY KEY ( id_cidade ) ;
 
--- ========== TABLE: TASK ==========
--- Tarefas de cuidado para o pet
-CREATE TABLE task (
-    id_task INT AUTO_INCREMENT PRIMARY KEY,
-    id_pet INT NOT NULL,
-    id_user_criador INT NOT NULL,
-    titulo VARCHAR(255) NOT NULL,
-    descricao VARCHAR(300),
-    tipo ENUM('MEDICACAO', 'ALIMENTACAO', 'EXERCICIO', 'LIMPEZA', 'VETERINARIO', 'OUTRO') NOT NULL,
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    data_vencimento DATE,
-    recorrencia ENUM('UNICA', 'DIARIA', 'SEMANAL', 'MENSAL') DEFAULT 'UNICA',
-    ativo BOOLEAN DEFAULT TRUE,
-    FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE,
-    FOREIGN KEY (id_user_criador) REFERENCES user(id_user) ON DELETE SET NULL
-);
+CREATE TABLE clinica 
+    ( 
+     id_clinica           NUMBER (3)  NOT NULL , 
+     nome                 VARCHAR2 (30)  NOT NULL , 
+     telefone_id_telefone NUMBER (3)  NOT NULL , 
+     endereco_id_endereco NUMBER (3)  NOT NULL 
+    ) 
+;
+CREATE UNIQUE INDEX clinica__IDX ON clinica 
+    ( 
+     telefone_id_telefone ASC 
+    ) 
+;
+CREATE UNIQUE INDEX clinica__IDXv1 ON clinica 
+    ( 
+     endereco_id_endereco ASC 
+    ) 
+;
 
--- ========== TABLE: TASK_COMPLETION ==========
--- Registro de conclusão de tarefas (para day streak)
-CREATE TABLE task_completion (
-    id_completion INT AUTO_INCREMENT PRIMARY KEY,
-    id_task INT NOT NULL,
-    id_user_responsavel INT NOT NULL,
-    data_conclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    observacoes VARCHAR(300),
-    FOREIGN KEY (id_task) REFERENCES task(id_task) ON DELETE CASCADE,
-    FOREIGN KEY (id_user_responsavel) REFERENCES user(id_user) ON DELETE SET NULL
-);
+ALTER TABLE clinica 
+    ADD CONSTRAINT clinica_PK PRIMARY KEY ( id_clinica ) ;
 
--- ========== TABLE: DAY_STREAK ==========
--- Registro de sequência de dias de cuidado
-CREATE TABLE day_streak (
-    id_streak INT AUTO_INCREMENT PRIMARY KEY,
-    id_pet INT NOT NULL,
-    id_user INT NOT NULL,
-    dias_consecutivos INT DEFAULT 1,
-    data_inicio DATE NOT NULL,
-    ultima_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    quebrado BOOLEAN DEFAULT FALSE,
-    data_quebra DATE,
-    FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE,
-    FOREIGN KEY (id_user) REFERENCES user(id_user) ON DELETE CASCADE,
-    UNIQUE KEY unique_user_pet_streak (id_user, id_pet)
-);
+CREATE TABLE endereco 
+    ( 
+     id_endereco      NUMBER (3)  NOT NULL , 
+     cep              VARCHAR2 (8)  NOT NULL , 
+     rua              VARCHAR2 (150)  NOT NULL , 
+     numero           VARCHAR2 (5)  NOT NULL , 
+     bairro_id_bairro NUMBER (3)  NOT NULL 
+    ) 
+;
 
--- ========== TABLE: CLINICA ==========
--- Clínicas veterinárias
-CREATE TABLE clinica (
-    id_clinica INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255),
-    telefone VARCHAR(20),
-    endereco VARCHAR(100),
-    cidade VARCHAR(100),
-    estado VARCHAR(2),
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    ativo BOOLEAN DEFAULT TRUE
-);
+ALTER TABLE endereco 
+    ADD CONSTRAINT endereco_PK PRIMARY KEY ( id_endereco ) ;
 
--- ========== TABLE: CONSULTA ==========
--- Consultas veterinárias
-CREATE TABLE consulta (
-    id_consulta INT AUTO_INCREMENT PRIMARY KEY,
-    id_pet INT NOT NULL,
-    id_clinica INT,
-    id_veterinario INT,
-    data_consulta DATETIME NOT NULL,
-    tipo ENUM('ROTINA', 'EMERGENCIA', 'VACINACAO', 'CIRURGIA') DEFAULT 'ROTINA',
-    descricao VARCHAR(300),
-    prescricao VARCHAR(300),
-    proxima_consulta DATE,
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE,
-    FOREIGN KEY (id_clinica) REFERENCES clinica(id_clinica) ON DELETE SET NULL,
-    FOREIGN KEY (id_veterinario) REFERENCES user(id_user) ON DELETE SET NULL
-);
+CREATE TABLE estado 
+    ( 
+     id_estado   NUMBER (3)  NOT NULL , 
+     nome_estado VARCHAR2 (30)  NOT NULL 
+    ) 
+;
 
--- ========== TABLE: MEDICAMENTO ==========
--- Histórico de medicamentos
-CREATE TABLE medicamento (
-    id_medicamento INT AUTO_INCREMENT PRIMARY KEY,
-    id_pet INT NOT NULL,
-    nome VARCHAR(255) NOT NULL,
-    dosagem VARCHAR(100),
-    frequencia VARCHAR(100),  -- Ex: "2 vezes ao dia"
-    data_inicio DATE,
-    data_fim DATE,
-    prescricao_id INT,
-    notas VARCHAR(300),
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE,
-    FOREIGN KEY (prescricao_id) REFERENCES consulta(id_consulta) ON DELETE SET NULL
-);
+ALTER TABLE estado 
+    ADD CONSTRAINT estado_PK PRIMARY KEY ( id_estado ) ;
 
--- ========== TABLE: VACINA ==========
--- Registro de vacinação
-CREATE TABLE vacina (
-    id_vacina INT AUTO_INCREMENT PRIMARY KEY,
-    id_pet INT NOT NULL,
-    nome_vacina VARCHAR(255) NOT NULL,
-    data_aplicacao DATE NOT NULL,
-    proxima_dose DATE,
-    veterinario VARCHAR(255),
-    numero_lote VARCHAR(100),
-    notas VARCHAR(300),
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (id_pet) REFERENCES pet(id_pet) ON DELETE CASCADE
-);
+CREATE TABLE pet 
+    ( 
+     id_pet       NUMBER (3)  NOT NULL , 
+     nome         VARCHAR2 (30)  NOT NULL , 
+     idade        NUMBER (2)  NOT NULL , 
+     sexo         VARCHAR2 (1)  NOT NULL , 
+     porte        VARCHAR2 (10)  NOT NULL , 
+     castrado     CHAR (1)  NOT NULL , 
+     raca_id_raca NUMBER (3)  NOT NULL 
+    ) 
+;
 
--- ========== INDEXES ==========
-CREATE INDEX idx_user_email ON user(email);
-CREATE INDEX idx_pet_ativo ON pet(ativo);
-CREATE INDEX idx_user_pet_user ON user_pet(id_user);
-CREATE INDEX idx_user_pet_pet ON user_pet(id_pet);
-CREATE INDEX idx_task_pet ON task(id_pet);
-CREATE INDEX idx_task_completion_task ON task_completion(id_task);
-CREATE INDEX idx_day_streak_pet_user ON day_streak(id_pet, id_user);
-CREATE INDEX idx_consulta_pet ON consulta(id_pet);
-CREATE INDEX idx_consulta_clinica ON consulta(id_clinica);
+ALTER TABLE pet 
+    ADD 
+    CHECK (sexo IN ('F', 'M')) 
+;
 
--- ========== VIEWS ==========
+ALTER TABLE pet 
+    ADD 
+    CHECK (porte IN ('GRANDE', 'MEDIO', 'PEQUENO')) 
+;
 
--- View: Pets com número de cuidadores
-CREATE VIEW vw_pet_cuidadores AS
-SELECT 
-    p.id_pet,
-    p.nome AS pet_nome,
-    p.especie,
-    COUNT(DISTINCT up.id_user) AS numero_cuidadores,
-    GROUP_CONCAT(u.nome SEPARATOR ', ') AS cuidadores
-FROM pet p
-LEFT JOIN user_pet up ON p.id_pet = up.id_pet AND up.ativo = TRUE
-LEFT JOIN user u ON up.id_user = u.id_user
-GROUP BY p.id_pet;
+ALTER TABLE pet 
+    ADD CONSTRAINT pet_PK PRIMARY KEY ( id_pet ) ;
 
--- View: Tarefas pendentes por pet
-CREATE VIEW vw_tarefas_pendentes AS
-SELECT 
-    t.id_task,
-    p.id_pet,
-    p.nome AS pet_nome,
-    t.titulo,
-    t.tipo,
-    t.data_vencimento,
-    u.nome AS criador
-FROM task t
-JOIN pet p ON t.id_pet = p.id_pet
-LEFT JOIN user u ON t.id_user_criador = u.id_user
-WHERE t.ativo = TRUE 
-  AND (t.data_vencimento >= CURDATE() OR t.data_vencimento IS NULL);
+CREATE TABLE raca 
+    ( 
+     id_raca   NUMBER (3)  NOT NULL , 
+     nome_raca VARCHAR2 (30)  NOT NULL 
+    ) 
+;
 
--- ========== STORED PROCEDURES ==========
+ALTER TABLE raca 
+    ADD CONSTRAINT raca_PK PRIMARY KEY ( id_raca ) ;
 
--- Procedure para atualizar day streak
-DELIMITER $$
+CREATE TABLE status 
+    ( 
+     id_status   NUMBER (3)  NOT NULL , 
+     nome_status VARCHAR2 (15)  NOT NULL 
+    ) 
+;
 
-CREATE PROCEDURE atualizar_day_streak(
-    IN p_id_pet INT,
-    IN p_id_user INT,
-    IN p_dias INT
-)
-BEGIN
-    DECLARE v_dias_atuais INT;
-    
-    -- Buscar o dia streak atual
-    SELECT dias_consecutivos INTO v_dias_atuais
-    FROM day_streak
-    WHERE id_pet = p_id_pet AND id_user = p_id_user
-    LIMIT 1;
-    
-    IF v_dias_atuais IS NULL THEN
-        -- Inserir novo registro
-        INSERT INTO day_streak (id_pet, id_user, dias_consecutivos, data_inicio)
-        VALUES (p_id_pet, p_id_user, p_dias, CURDATE());
-    ELSE
-        -- Atualizar registro existente
-        UPDATE day_streak
-        SET dias_consecutivos = v_dias_atuais + p_dias,
-            ultima_atualizacao = NOW()
-        WHERE id_pet = p_id_pet AND id_user = p_id_user;
-    END IF;
-END$$
+ALTER TABLE status 
+    ADD 
+    CHECK (nome_status IN ('CONCLUIDO', 'EXPIRADO', 'PENDENTE')) 
+;
 
-DELIMITER ;
+ALTER TABLE status 
+    ADD CONSTRAINT status_PK PRIMARY KEY ( id_status ) ;
 
--- Procedure para quebrar day streak
-DELIMITER $$
+CREATE TABLE tarefa 
+    ( 
+     id_tarefa                  NUMBER (3)  NOT NULL , 
+     titulo                     VARCHAR2 (30)  NOT NULL , 
+     pontos_tarefa              NUMBER (3)  NOT NULL , 
+     descricao                  VARCHAR2 (200)  NOT NULL , 
+     criacao                    TIMESTAMP  NOT NULL , 
+     prazo                      TIMESTAMP  NOT NULL , 
+     conclusao                  TIMESTAMP , 
+     usuario_id_usuario         NUMBER (3) , 
+     pet_id_pet                 NUMBER (3)  NOT NULL , 
+     status_id_status           NUMBER (3)  NOT NULL , 
+     veterinario_id_veterinario NUMBER (3)  NOT NULL 
+    ) 
+;
+CREATE UNIQUE INDEX tarefa__IDX ON tarefa 
+    ( 
+     usuario_id_usuario ASC 
+    ) 
+;
 
-CREATE PROCEDURE quebrar_day_streak(
-    IN p_id_pet INT,
-    IN p_id_user INT
-)
-BEGIN
-    UPDATE day_streak
-    SET quebrado = TRUE,
-        data_quebra = CURDATE()
-    WHERE id_pet = p_id_pet AND id_user = p_id_user;
-END$$
+ALTER TABLE tarefa 
+    ADD CONSTRAINT tarefa_PK PRIMARY KEY ( id_tarefa ) ;
 
-DELIMITER ;
+CREATE TABLE telefone 
+    ( 
+     id_telefone NUMBER (3)  NOT NULL , 
+     num_ddd     VARCHAR2 (2)  NOT NULL , 
+     num_tel     VARCHAR2 (9)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE telefone 
+    ADD CONSTRAINT telefone_PK PRIMARY KEY ( id_telefone ) ;
+
+CREATE TABLE tipo_atend 
+    ( 
+     id_tipo_atend NUMBER (3)  NOT NULL , 
+     tipo          VARCHAR2 (30)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE tipo_atend 
+    ADD CONSTRAINT tipo_atend_PK PRIMARY KEY ( id_tipo_atend ) ;
+
+CREATE TABLE usuario 
+    ( 
+     id_usuario           NUMBER (3)  NOT NULL , 
+     nome                 VARCHAR2 (100)  NOT NULL , 
+     email                VARCHAR2 (50)  NOT NULL , 
+     senha                VARCHAR2 (20)  NOT NULL , 
+     telefone_id_telefone NUMBER (3)  NOT NULL 
+    ) 
+;
+CREATE UNIQUE INDEX usuario__IDX ON usuario 
+    ( 
+     telefone_id_telefone ASC 
+    ) 
+;
+
+ALTER TABLE usuario 
+    ADD CONSTRAINT usuario_PK PRIMARY KEY ( id_usuario ) ;
+
+CREATE TABLE usuario_endereco 
+    ( 
+     usuario_id_usuario   NUMBER (3)  NOT NULL , 
+     endereco_id_endereco NUMBER (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE usuario_endereco 
+    ADD CONSTRAINT usuario_endereco_PK PRIMARY KEY ( usuario_id_usuario, endereco_id_endereco ) ;
+
+CREATE TABLE usuario_pet 
+    ( 
+     usuario_id_usuario NUMBER (3)  NOT NULL , 
+     pet_id_pet         NUMBER (3)  NOT NULL , 
+     respon_princ       CHAR (1)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE usuario_pet 
+    ADD CONSTRAINT usuario_pet_PK PRIMARY KEY ( usuario_id_usuario, pet_id_pet ) ;
+
+CREATE TABLE veterinario 
+    ( 
+     id_veterinario       NUMBER (3)  NOT NULL , 
+     nome                 VARCHAR2 (100)  NOT NULL , 
+     email                VARCHAR2 (50)  NOT NULL , 
+     senha                VARCHAR2 (20)  NOT NULL , 
+     telefone_id_telefone NUMBER (3)  NOT NULL , 
+     clinica_id_clinica   NUMBER (3)
+    ) 
+;
+CREATE UNIQUE INDEX veterinario__IDX ON veterinario 
+    ( 
+     telefone_id_telefone ASC 
+    ) 
+;
+
+ALTER TABLE veterinario 
+    ADD CONSTRAINT veterinario_PK PRIMARY KEY ( id_veterinario ) ;
+
+ALTER TABLE atendimento 
+    ADD CONSTRAINT atendimento_pet_FK FOREIGN KEY 
+    ( 
+     pet_id_pet
+    ) 
+    REFERENCES pet 
+    ( 
+     id_pet
+    ) 
+;
+
+ALTER TABLE atendimento 
+    ADD CONSTRAINT atendimento_status_FK FOREIGN KEY 
+    ( 
+     status_id_status
+    ) 
+    REFERENCES status 
+    ( 
+     id_status
+    ) 
+;
+
+ALTER TABLE atendimento 
+    ADD CONSTRAINT atendimento_tipo_atend_FK FOREIGN KEY 
+    ( 
+     tipo_atend_id_tipo_atend
+    ) 
+    REFERENCES tipo_atend 
+    ( 
+     id_tipo_atend
+    ) 
+;
+
+ALTER TABLE atendimento 
+    ADD CONSTRAINT atendimento_veterinario_FK FOREIGN KEY 
+    ( 
+     veterinario_id_veterinario
+    ) 
+    REFERENCES veterinario 
+    ( 
+     id_veterinario
+    ) 
+;
+
+ALTER TABLE bairro 
+    ADD CONSTRAINT bairro_cidade_FK FOREIGN KEY 
+    ( 
+     cidade_id_cidade
+    ) 
+    REFERENCES cidade 
+    ( 
+     id_cidade
+    ) 
+;
+
+ALTER TABLE cidade 
+    ADD CONSTRAINT cidade_estado_FK FOREIGN KEY 
+    ( 
+     estado_id_estado
+    ) 
+    REFERENCES estado 
+    ( 
+     id_estado
+    ) 
+;
+
+ALTER TABLE clinica 
+    ADD CONSTRAINT clinica_endereco_FK FOREIGN KEY 
+    ( 
+     endereco_id_endereco
+    ) 
+    REFERENCES endereco 
+    ( 
+     id_endereco
+    ) 
+;
+
+ALTER TABLE clinica 
+    ADD CONSTRAINT clinica_telefone_FK FOREIGN KEY 
+    ( 
+     telefone_id_telefone
+    ) 
+    REFERENCES telefone 
+    ( 
+     id_telefone
+    ) 
+;
+
+ALTER TABLE endereco 
+    ADD CONSTRAINT endereco_bairro_FK FOREIGN KEY 
+    ( 
+     bairro_id_bairro
+    ) 
+    REFERENCES bairro 
+    ( 
+     id_bairro
+    ) 
+;
+
+ALTER TABLE pet 
+    ADD CONSTRAINT pet_raca_FK FOREIGN KEY 
+    ( 
+     raca_id_raca
+    ) 
+    REFERENCES raca 
+    ( 
+     id_raca
+    ) 
+;
+
+ALTER TABLE tarefa 
+    ADD CONSTRAINT tarefa_pet_FK FOREIGN KEY 
+    ( 
+     pet_id_pet
+    ) 
+    REFERENCES pet 
+    ( 
+     id_pet
+    ) 
+;
+
+ALTER TABLE tarefa 
+    ADD CONSTRAINT tarefa_status_FK FOREIGN KEY 
+    ( 
+     status_id_status
+    ) 
+    REFERENCES status 
+    ( 
+     id_status
+    ) 
+;
+
+ALTER TABLE tarefa 
+    ADD CONSTRAINT tarefa_usuario_FK FOREIGN KEY 
+    ( 
+     usuario_id_usuario
+    ) 
+    REFERENCES usuario 
+    ( 
+     id_usuario
+    ) 
+;
+
+ALTER TABLE tarefa 
+    ADD CONSTRAINT tarefa_veterinario_FK FOREIGN KEY 
+    ( 
+     veterinario_id_veterinario
+    ) 
+    REFERENCES veterinario 
+    ( 
+     id_veterinario
+    ) 
+;
+
+ALTER TABLE usuario_endereco 
+    ADD CONSTRAINT usuario_endereco_endereco_FK FOREIGN KEY 
+    ( 
+     endereco_id_endereco
+    ) 
+    REFERENCES endereco 
+    ( 
+     id_endereco
+    ) 
+;
+
+ALTER TABLE usuario_endereco 
+    ADD CONSTRAINT usuario_endereco_usuario_FK FOREIGN KEY 
+    ( 
+     usuario_id_usuario
+    ) 
+    REFERENCES usuario 
+    ( 
+     id_usuario
+    ) 
+;
+
+ALTER TABLE usuario_pet 
+    ADD CONSTRAINT usuario_pet_pet_FK FOREIGN KEY 
+    ( 
+     pet_id_pet
+    ) 
+    REFERENCES pet 
+    ( 
+     id_pet
+    ) 
+;
+
+ALTER TABLE usuario_pet 
+    ADD CONSTRAINT usuario_pet_usuario_FK FOREIGN KEY 
+    ( 
+     usuario_id_usuario
+    ) 
+    REFERENCES usuario 
+    ( 
+     id_usuario
+    ) 
+;
+
+ALTER TABLE usuario 
+    ADD CONSTRAINT usuario_telefone_FK FOREIGN KEY 
+    ( 
+     telefone_id_telefone
+    ) 
+    REFERENCES telefone 
+    ( 
+     id_telefone
+    ) 
+;
+
+ALTER TABLE veterinario 
+    ADD CONSTRAINT veterinario_clinica_FK FOREIGN KEY 
+    ( 
+     clinica_id_clinica
+    ) 
+    REFERENCES clinica 
+    ( 
+     id_clinica
+    ) 
+;
+
+ALTER TABLE veterinario 
+    ADD CONSTRAINT veterinario_telefone_FK FOREIGN KEY 
+    ( 
+     telefone_id_telefone
+    ) 
+    REFERENCES telefone 
+    ( 
+     id_telefone
+    ) 
+;
