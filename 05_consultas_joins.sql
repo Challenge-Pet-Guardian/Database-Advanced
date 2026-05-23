@@ -18,10 +18,16 @@ BEGIN
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN
 		prc_grava_log('bloco_consulta_01', USER, SQLCODE, 'Nenhum dado encontrado: ' || SQLERRM);
+		ROLLBACK;
+		RAISE;
 	WHEN VALUE_ERROR THEN
 		prc_grava_log('bloco_consulta_01', USER, SQLCODE, 'Erro de valor na consulta: ' || SQLERRM);
+		ROLLBACK;
+		RAISE;
 	WHEN OTHERS THEN
 		prc_grava_log('bloco_consulta_01', USER, SQLCODE, SQLERRM);
+		ROLLBACK;
+		RAISE;
 END;
 /
 
@@ -63,9 +69,15 @@ BEGIN
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN
 		prc_grava_log('bloco_consulta_02', USER, SQLCODE, 'Nenhum dado encontrado nas sumarizacoes: ' || SQLERRM);
+		ROLLBACK;
+		RAISE;
 	WHEN VALUE_ERROR THEN
 		prc_grava_log('bloco_consulta_02', USER, SQLCODE, 'Erro de valor nas sumarizacoes: ' || SQLERRM);
+		ROLLBACK;
+		RAISE;
 	WHEN OTHERS THEN
 		prc_grava_log('bloco_consulta_02', USER, SQLCODE, SQLERRM);
+		ROLLBACK;
+		RAISE;
 END;
 /

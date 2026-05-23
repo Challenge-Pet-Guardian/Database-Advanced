@@ -12,17 +12,26 @@ BEGIN
     prc_insere_status(NULL, 'EXPIRADO');
     prc_insere_tipo_atend(NULL, 'CONSULTA');
     prc_insere_tipo_atend(NULL, 'VACINACAO');
+
 EXCEPTION
     WHEN DUP_VAL_ON_INDEX THEN
         prc_grava_log('bloco_ref_01', USER, SQLCODE, 'Registro duplicado em bloco de referencia: ' || SQLERRM);
+        ROLLBACK;
+        RAISE;
+
     WHEN VALUE_ERROR THEN
         prc_grava_log('bloco_ref_01', USER, SQLCODE, 'Erro de valor em bloco de referencia: ' || SQLERRM);
+        ROLLBACK;
+        RAISE;
+
     WHEN OTHERS THEN
         prc_grava_log('bloco_ref_01', USER, SQLCODE, SQLERRM);
+        ROLLBACK;
+        RAISE;
 END;
 /
 
--- 2) Inserção de telephones, endereco, bairro, cidade, estado, clinica
+-- 2) Inserção de telefones, endereco, bairro, cidade, estado, clinica
 BEGIN
     prc_insere_telefone(NULL, '11', '999988877');
     prc_insere_estado(NULL, 'SP');
@@ -30,32 +39,51 @@ BEGIN
     prc_insere_bairro(NULL, 'Pinheiros', 1);
     prc_insere_endereco(NULL, '05400000', 'Rua Exemplo', '123', 1);
     prc_insere_clinica(NULL, 'Clinica Exemplo', 1, 1);
+
 EXCEPTION
     WHEN DUP_VAL_ON_INDEX THEN
         prc_grava_log('bloco_ref_02', USER, SQLCODE, 'Registro duplicado em bloco endereco/clinica: ' || SQLERRM);
+        ROLLBACK;
+        RAISE;
+
     WHEN VALUE_ERROR THEN
         prc_grava_log('bloco_ref_02', USER, SQLCODE, 'Erro de valor em bloco endereco/clinica: ' || SQLERRM);
+        ROLLBACK;
+        RAISE;
+
     WHEN OTHERS THEN
         prc_grava_log('bloco_ref_02', USER, SQLCODE, SQLERRM);
+        ROLLBACK;
+        RAISE;
 END;
 /
 
--- 3) Inserção de usuários e pets através das procedures
+-- 3) Inserção de usuários, veterinarios e pets através das procedures
 BEGIN
     prc_insere_telefone(NULL, '21', '988776655');
     prc_insere_usuario(NULL, 'Joao Silva', 'joao@example.com', 'senha123', 2);
     prc_insere_usuario(NULL, 'Maria Souza', 'maria@example.com', 'senha123', 1);
     prc_insere_pet(NULL, 'Rex', 5, 'M', 'GRANDE', 'S', 1);
     prc_insere_pet(NULL, 'Mimi', 3, 'F', 'PEQUENO', 'N', 3);
+    prc_insere_veterinario(NULL, 'Dr. Carlos', 'carlos@vet.com', 'senha123', 1, 1);
     prc_insere_usuario_pet(1, 1, 'S'); -- Joao dono do Rex
     prc_insere_usuario_pet(2, 2, 'S'); -- Maria dono do Mimi
+
 EXCEPTION
     WHEN DUP_VAL_ON_INDEX THEN
-        prc_grava_log('bloco_ref_03', USER, SQLCODE, 'Registro duplicado em bloco usuarios/pets: ' || SQLERRM);
+        prc_grava_log('bloco_ref_03', USER, SQLCODE, 'Registro duplicado em bloco usuarios/veterinarios/pets: ' || SQLERRM);
+        ROLLBACK;
+        RAISE;
+
     WHEN VALUE_ERROR THEN
-        prc_grava_log('bloco_ref_03', USER, SQLCODE, 'Erro de valor em bloco usuarios/pets: ' || SQLERRM);
+        prc_grava_log('bloco_ref_03', USER, SQLCODE, 'Erro de valor em bloco usuarios/veterinarios/pets: ' || SQLERRM);
+        ROLLBACK;
+        RAISE;
+
     WHEN OTHERS THEN
         prc_grava_log('bloco_ref_03', USER, SQLCODE, SQLERRM);
+        ROLLBACK;
+        RAISE;
 END;
 /
 
@@ -66,15 +94,25 @@ BEGIN
         v_status NUMBER;
     BEGIN
         SELECT id_status INTO v_status FROM status WHERE nome_status = 'PENDENTE' AND ROWNUM = 1;
+
         prc_insere_tarefa(NULL, 'Tomar remedio', 10, 'Dar remédio pela manhã', SYSTIMESTAMP, SYSTIMESTAMP + 1, NULL, 1, v_status, 1);
         prc_insere_tarefa(NULL, 'Passear', 5, 'Levar para passear', SYSTIMESTAMP, SYSTIMESTAMP + 2, NULL, 1, v_status, 1);
+
     EXCEPTION
         WHEN NO_DATA_FOUND THEN
             prc_grava_log('bloco_ref_04', USER, SQLCODE, 'Status PENDENTE não encontrado para inserir tarefas');
+            ROLLBACK;
+            RAISE;
+
         WHEN VALUE_ERROR THEN
             prc_grava_log('bloco_ref_04', USER, SQLCODE, 'Erro de valor ao inserir tarefas: ' || SQLERRM);
+            ROLLBACK;
+            RAISE;
+
         WHEN OTHERS THEN
             prc_grava_log('bloco_ref_04', USER, SQLCODE, SQLERRM);
+            ROLLBACK;
+            RAISE;
     END;
 END;
 /

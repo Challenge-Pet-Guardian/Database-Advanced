@@ -157,11 +157,6 @@ CREATE TABLE tarefa
 	 veterinario_id_veterinario NUMBER (3)  NOT NULL 
 	) 
 ;
-CREATE UNIQUE INDEX tarefa__IDX ON tarefa 
-	( 
-	 usuario_id_usuario ASC 
-	) 
-;
 
 ALTER TABLE tarefa 
 	ADD CONSTRAINT tarefa_PK PRIMARY KEY ( id_tarefa ) ;
@@ -193,7 +188,7 @@ CREATE TABLE usuario
 	 nome                 VARCHAR2 (100)  NOT NULL , 
 	 email                VARCHAR2 (50)  NOT NULL , 
 	 senha                VARCHAR2 (20)  NOT NULL , 
-	 telefone_id_telefone NUMBER (3)  NOT NULL 
+	 telefone_id_telefone NUMBER (3)
 	) 
 ;
 CREATE UNIQUE INDEX usuario__IDX ON usuario 

@@ -7,7 +7,7 @@ BEGIN
     BEGIN
         SELECT COUNT(*) INTO v_cnt FROM pet;
         IF v_cnt < 5 THEN
-            prc_grava_log('bloco_valor_anterior_proximo', USER, NULL, 'Relatório requer ao menos 5 linhas; encontrados: ' || v_cnt);
+            RAISE NO_DATA_FOUND;
         END IF;
         DBMS_OUTPUT.PUT_LINE('id_pet | nome_atual | nome_anterior | nome_proximo');
         FOR r IN (
@@ -20,11 +20,14 @@ BEGIN
         ) LOOP
             DBMS_OUTPUT.PUT_LINE(r.id_pet || ' | ' || r.nome_atual || ' | ' || r.nome_anterior || ' | ' || r.nome_proximo);
         END LOOP;
+
     EXCEPTION
         WHEN NO_DATA_FOUND THEN
-            prc_grava_log('bloco_valor_anterior_proximo', USER, SQLCODE, 'Nenhum pet encontrado: ' || SQLERRM);
+            prc_grava_log('bloco_valor_anterior_proximo', USER, SQLCODE, 'Relatório requer ao menos 5 pets cadastrados');
+
         WHEN VALUE_ERROR THEN
             prc_grava_log('bloco_valor_anterior_proximo', USER, SQLCODE, 'Erro de valor no relatório: ' || SQLERRM);
+
         WHEN OTHERS THEN
             prc_grava_log('bloco_valor_anterior_proximo', USER, SQLCODE, SQLERRM);
     END;
