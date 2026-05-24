@@ -15,12 +15,26 @@ BEGIN
             RAISE NO_DATA_FOUND;
         END IF;
 
+        DBMS_OUTPUT.PUT_LINE('=== RELATORIO 1: DETALHAMENTO DE TAREFAS E PONTOS ===');
         FOR r IN c_tarefas LOOP
             DBMS_OUTPUT.PUT_LINE('Tarefa: ' || r.titulo || ' | Pontos: ' || r.pontos_tarefa || ' | Status: ' || r.status_id_status);
             v_total_pontos := v_total_pontos + NVL(r.pontos_tarefa,0);
+            
+            -- Tomada de decisão baseada nos pontos da tarefa
+            IF r.pontos_tarefa >= 20 THEN
+                DBMS_OUTPUT.PUT_LINE('   -> Prioridade: ALTA (Impacto relevante no cuidado)');
+            ELSIF r.pontos_tarefa >= 10 THEN
+                DBMS_OUTPUT.PUT_LINE('   -> Prioridade: MEDIA');
+            ELSE
+                DBMS_OUTPUT.PUT_LINE('   -> Prioridade: BAIXA');
+            END IF;
+            DBMS_OUTPUT.PUT_LINE(' '); -- Espaço entre as tarefas
         END LOOP;
 
-        DBMS_OUTPUT.PUT_LINE('Total de pontos de todas as tarefas: ' || v_total_pontos);
+        DBMS_OUTPUT.PUT_LINE('---------------------------------------------------');
+        DBMS_OUTPUT.PUT_LINE('Valor Numérico Sumarizado (Total de Pontos): ' || v_total_pontos);
+        DBMS_OUTPUT.PUT_LINE('---------------------------------------------------');
+        DBMS_OUTPUT.PUT_LINE('Sumarização de Pontos por Status do Agrupamento:');
 
         FOR r2 IN (
             SELECT s.nome_status, SUM(t.pontos_tarefa) AS soma
@@ -28,8 +42,34 @@ BEGIN
             JOIN status s ON t.status_id_status = s.id_status
             GROUP BY s.nome_status
         ) LOOP
-            DBMS_OUTPUT.PUT_LINE('Status: ' || r2.nome_status || ' | Pontos totais: ' || r2.soma);
+            DBMS_OUTPUT.PUT_LINE('Status: ' || r2.nome_status || ' | Pontos acumulados: ' || r2.soma);
         END LOOP;
+        
+        DBMS_OUTPUT.PUT_LINE('---------------------------------------------------');
+        DBMS_OUTPUT.PUT_LINE('Carga Total de Pontos em Tarefas dos Pets de cada Responsável:');
+        FOR r3 IN (
+            SELECT u.nome, SUM(t.pontos_tarefa) AS soma_cuidador
+            FROM usuario u
+            JOIN usuario_pet up ON u.id_usuario = up.usuario_id_usuario
+            JOIN tarefa t ON up.pet_id_pet = t.pet_id_pet
+            GROUP BY u.nome
+            ORDER BY soma_cuidador DESC
+        ) LOOP
+            DBMS_OUTPUT.PUT_LINE('Responsável: ' || r3.nome || ' | Pontos sob cuidados: ' || r3.soma_cuidador);
+        END LOOP;
+        
+        DBMS_OUTPUT.PUT_LINE('---------------------------------------------------');
+        DBMS_OUTPUT.PUT_LINE('Pontos Efetivamente Ganhos por Conclusao de Tarefa (Realizadas):');
+        FOR r4 IN (
+            SELECT u.nome, SUM(t.pontos_tarefa) AS soma_ganhos
+            FROM usuario u
+            JOIN tarefa t ON u.id_usuario = t.usuario_id_usuario
+            GROUP BY u.nome
+            ORDER BY soma_ganhos DESC
+        ) LOOP
+            DBMS_OUTPUT.PUT_LINE('Usuário Executor: ' || r4.nome || ' | Pontos Ganhos: ' || r4.soma_ganhos);
+        END LOOP;
+        DBMS_OUTPUT.PUT_LINE('===================================================');
 
     EXCEPTION
         WHEN NO_DATA_FOUND THEN

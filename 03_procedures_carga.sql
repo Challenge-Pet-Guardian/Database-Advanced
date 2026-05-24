@@ -2,7 +2,7 @@
 -- Procedures para carga de dados em cada tabela, com tratamento de exceções e registro em log
 -- Inclui sequences auxiliares para facilitar geração de PK quando necessário
 
--- Sequences para PK (úteis nas procedures de carga)
+-- Sequences para PK
 BEGIN
     EXECUTE IMMEDIATE 'CREATE SEQUENCE seq_pet START WITH 1 INCREMENT BY 1 NOCACHE NOCYCLE';
 EXCEPTION WHEN OTHERS THEN
@@ -129,7 +129,7 @@ EXCEPTION WHEN OTHERS THEN
 END;
 /
 
--- Procedure helper para gravar logs (autonomous transaction)
+-- Procedure helper para gravar logs
 CREATE OR REPLACE PROCEDURE prc_grava_log(
     p_nome_procedure IN VARCHAR2,
     p_usuario        IN VARCHAR2,
@@ -143,7 +143,7 @@ BEGIN
     COMMIT;
 EXCEPTION
     WHEN OTHERS THEN
-        NULL; -- evita que o log gere novas exceções
+        NULL;
 END prc_grava_log;
 /
 
@@ -496,14 +496,26 @@ EXCEPTION
 END prc_insere_tarefa;
 /
 
--- Procedure: concluir tarefa (marca usuario e data de conclusao, atualiza status para CONCLUIDO)
+-- Procedure: concluir tarefa (marca usuário e data de conclusão, atualiza status para CONCLUIDO)
 CREATE OR REPLACE PROCEDURE prc_concluir_tarefa(
     p_id_tarefa IN NUMBER,
     p_id_usuario IN NUMBER,
     p_data_conclusao IN TIMESTAMP DEFAULT SYSTIMESTAMP
 ) AS
     v_status_concluido NUMBER;
+    v_usuario_atual NUMBER;
 BEGIN
+    -- Verificar se a tarefa existe e se já possui um concluinte cadastrado
+    SELECT usuario_id_usuario INTO v_usuario_atual 
+    FROM tarefa 
+    WHERE id_tarefa = p_id_tarefa;
+
+    -- Regra de negócio: somente uma pessoa pode concluir a tarefa
+    IF v_usuario_atual IS NOT NULL THEN
+        prc_grava_log('prc_concluir_tarefa', USER, -20001, 'Tarefa ' || p_id_tarefa || ' ja concluida pelo usuario ' || v_usuario_atual);
+        RETURN;
+    END IF;
+
     SELECT id_status INTO v_status_concluido FROM status WHERE nome_status = 'CONCLUIDO' AND ROWNUM = 1;
     UPDATE tarefa
     SET usuario_id_usuario = p_id_usuario,
@@ -513,7 +525,7 @@ BEGIN
     COMMIT;
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
-        prc_grava_log('prc_concluir_tarefa', USER, SQLCODE, 'Status CONCLUIDO não encontrado');
+        prc_grava_log('prc_concluir_tarefa', USER, SQLCODE, 'Tarefa ' || p_id_tarefa || ' ou status CONCLUIDO nao encontrado');
     WHEN VALUE_ERROR THEN
         prc_grava_log('prc_concluir_tarefa', USER, SQLCODE, 'Erro de valor: ' || SQLERRM);
     WHEN OTHERS THEN

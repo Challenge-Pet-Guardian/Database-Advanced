@@ -1,5 +1,5 @@
 -- 02_ddl_logs.sql
--- Criação da tabela de logs para registro de erros (Oracle 11g compatível)
+-- Criação da tabela de logs para registro de erros
 
 CREATE TABLE log_erros (
     id_log         NUMBER(12) NOT NULL,
