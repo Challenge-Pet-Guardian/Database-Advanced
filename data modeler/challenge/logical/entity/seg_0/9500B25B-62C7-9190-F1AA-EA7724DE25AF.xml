@@ -3,6 +3,9 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:53:14 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:53:18 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -26,6 +32,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-10 02:01:52 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -36,6 +45,9 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:55:48 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -46,6 +58,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:31:56 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,6 +75,9 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-14 14:32:18 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -75,17 +93,23 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-10 02:03:30 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1 CHAR</dataTypeSize>
 <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_raca" id="E038BE6F-13FC-06AE-BF27-CB66DFADD06E">
+<Attribute name="id_raca" id="12A4F176-C82D-3244-0AE8-D3D7E1756A19">
 <createdBy>Enzo</createdBy>
-<createdTime>2026-05-17 23:40:51 UTC</createdTime>
+<createdTime>2026-05-24 21:50:27 UTC</createdTime>
 <generatorID>FC9F0C60-0641-BAA8-33DA-AF8E759775F2</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <referedAttribute>1140B66B-585F-B6B9-1F84-B64902BF5EA4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -99,6 +123,9 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-05 20:53:26 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
+<engineerTo>
+<item key="BC59906A-C655-9079-5EF6-9F8ACA274C23" value="true"/>
+</engineerTo>
 <pk>true</pk>
 <newElementsIDs>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D,FC9F0C60-0641-BAA8-33DA-AF8E759775F2</newElementsIDs>
 <usedAttributes>
