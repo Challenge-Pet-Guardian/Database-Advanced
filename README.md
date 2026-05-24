@@ -57,7 +57,11 @@
 
 ## Repositório Github e Documentação Banco de dados
 
-[Repositório Github](https://github.com/Challenge-Pet-Guardian/Database-Advanced) | [Documentação Banco de dados](/docs/Documentação%20Database%20Advanced%20-%20Pet%20Guardian.pdf)
+[Repositório Github](https://github.com/Challenge-Pet-Guardian/Database-Advanced)
+
+[Documentação Banco de dados](/docs/Documentação%20Database%20Advanced%20-%20Pet%20Guardian.pdf)
+
+[Vídeo Youtube](https://youtu.be/fm-ParvR44M?si=wi_zEbA3xwttCwfi)
 
 
 ### 🗄️ Modelagem Lógica e Relacional do Banco de Dados
