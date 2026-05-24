@@ -3,9 +3,6 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-09 18:57:29 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-09 18:57:44 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -32,9 +26,6 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-10 01:59:55 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -45,9 +36,6 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-15 11:31:39 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -58,9 +46,6 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-10 02:00:50 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -71,9 +56,6 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-09 18:57:55 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
@@ -83,9 +65,6 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-09 18:58:25 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
@@ -95,9 +74,6 @@
 <createdBy>Enzo</createdBy>
 <createdTime>2026-05-17 23:40:17 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -109,9 +85,6 @@
 <createdTime>2026-05-20 12:21:13 UTC</createdTime>
 <generatorID>33ABF98F-9748-0D5A-F782-E7D14CAAB4B4</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <referedAttribute>06CB55AC-72C0-906B-C777-AA2E0DCAA90F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -124,9 +97,6 @@
 <createdTime>2026-05-13 12:30:11 UTC</createdTime>
 <generatorID>E6637EA1-411C-D61D-DB79-B4B3A612EA8E</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <referedAttribute>6AAB1D2F-33F4-43DD-62EE-5683C1379D2D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -139,9 +109,6 @@
 <createdTime>2026-05-17 18:56:21 UTC</createdTime>
 <generatorID>5F8F06D1-A046-C21C-C5B5-5BDFCAE5667E</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <referedAttribute>733F42C1-9D56-CB00-FC7C-1BBFED52BFB5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -154,9 +121,6 @@
 <createdTime>2026-05-21 14:05:10 UTC</createdTime>
 <generatorID>F18C8C86-4611-CA7C-D5C8-56261CB80D12</generatorID>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <referedAttribute>A70E3F6A-625A-4AE8-C0F6-20886E05126E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -170,9 +134,6 @@
 <createdBy>lulz_user</createdBy>
 <createdTime>2026-05-09 18:57:54 UTC</createdTime>
 <ownerDesignName>challenge</ownerDesignName>
-<engineerTo>
-<item key="D1858235-BC12-2586-FA46-B67B19390F53" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>699EC991-788B-C0D7-49D0-4F17ECAAEA78</attributeRef>

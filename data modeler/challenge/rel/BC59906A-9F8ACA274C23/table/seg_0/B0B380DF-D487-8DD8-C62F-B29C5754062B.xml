@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0B380DF-D487-8DD8-C62F-B29C5754062B" name="veterinario">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>C1E07CC8-B783-025F-C048-54089CBCEDCB</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_veterinario" id="A51CE8CF-87F3-2E61-E11F-607F8EBF8403">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>A70E3F6A-625A-4AE8-C0F6-20886E05126E</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="D58E91D7-B3FB-2B3F-A94F-BC99BD9216ED">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>48EB0113-084E-67FF-BD2C-9C5EDC566F1E</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="A9C48254-B8B9-3F8A-43E2-738F93D5F074">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>AEF3566B-A08B-354A-3759-FE4A3CD9F0E8</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="36A06430-EAFD-F6D1-6E7A-4AF2DA02A204">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>A6D48563-C74D-1B36-734F-B710E88EEA29</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone_id_telefone" id="C8707C3B-7E94-0B9B-0E9F-9C15819F454A">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>85B665C8-BFC7-A504-3BC2-D645152FE36F</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D6BE4DC-D99C-A6AF-545C-F03A707DC0CF" referredColumn="7175B731-D264-4E5E-6256-076497F5D027"/>
+</associations>
+</Column>
+<Column name="clinica_id_clinica" id="5EFD58B4-BB6B-21F1-8ECD-AF4B0DC39578">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>CC2D3D0C-9EC3-5F03-D058-C2B80B6D7EEF</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="886ADBD4-6CF8-1011-F9AE-C4EDD8B1B496" referredColumn="0204F70F-0099-5805-4137-B23BE7061E4A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAC75346-F6F2-FE88-2FD5-99FE52DC8155" name="veterinario_PK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>D074F813-038B-0854-1F78-F673A9351B87</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A51CE8CF-87F3-2E61-E11F-607F8EBF8403"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12B7E1B1-B94E-FE6B-06FA-6ECF0C07F6F5" name="veterinario__IDX">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4E44099A-1710-578D-EEA1-064FAA37BC7A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C8707C3B-7E94-0B9B-0E9F-9C15819F454A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F4178E3-7049-EE55-2073-E8286C1C54FA" name="veterinario_telefone_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>4E44099A-1710-578D-EEA1-064FAA37BC7A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8707C3B-7E94-0B9B-0E9F-9C15819F454A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6F6BC8C-64BE-BE06-EFE3-EFFCDB4F237D" name="veterinario_clinica_FK">
+<createdBy>Enzo</createdBy>
+<createdTime>2026-05-24 21:47:05 UTC</createdTime>
+<generatorID>7D450393-F3F4-F5FF-BA76-B60D9FE2121A</generatorID>
+<ownerDesignName>challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EFD58B4-BB6B-21F1-8ECD-AF4B0DC39578"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
